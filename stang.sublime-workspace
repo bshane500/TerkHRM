@@ -1,0 +1,1954 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"r",
+				"route	blade-route"
+			],
+			[
+				"Date",
+				"date_add"
+			],
+			[
+				"kw",
+				"kwesibook"
+			],
+			[
+				"m",
+				"map"
+			],
+			[
+				"tot",
+				"totalRequestedDays"
+			],
+			[
+				"Input",
+				"Input::get	Retrieve an Input value"
+			],
+			[
+				"dd",
+				"dd"
+			],
+			[
+				"le",
+				"leave-types"
+			],
+			[
+				"lea",
+				"leaveType"
+			],
+			[
+				"Leave",
+				"LeaveType"
+			],
+			[
+				"leave",
+				"leaveType"
+			],
+			[
+				"Bra",
+				"Branch"
+			],
+			[
+				"Route",
+				"Route::group	Create a Group of Routes"
+			],
+			[
+				"departm",
+				"departments"
+			],
+			[
+				"label",
+				"label	<label>"
+			],
+			[
+				"inpu",
+				"inpute	input - email"
+			],
+			[
+				"materializ",
+				"materialize-css"
+			],
+			[
+				"image",
+				"image_ext"
+			],
+			[
+				"ful",
+				"full_size_dir"
+			],
+			[
+				"ng-re",
+				"ng-repeat	AngularJS"
+			],
+			[
+				"func",
+				"function without name"
+			],
+			[
+				"$rou",
+				"$routeParams	AngularJS"
+			],
+			[
+				"$Lo",
+				"$location	AngularJS"
+			],
+			[
+				"ng-cl",
+				"ng-click	AngularJS"
+			],
+			[
+				"$ro",
+				"$routeParams	AngularJS"
+			],
+			[
+				"ng-r",
+				"ng-repeat	AngularJS"
+			],
+			[
+				"clea",
+				"clearTimeout〔function〕"
+			],
+			[
+				"$sc",
+				"$scope	AngularJS"
+			],
+			[
+				"fun",
+				"function〔keyword〕"
+			],
+			[
+				"page",
+				"pageModel"
+			],
+			[
+				"C",
+				"Crop	Crop"
+			],
+			[
+				"arr",
+				"array"
+			],
+			[
+				"ng",
+				"ng-repeat=〔attribute〕"
+			],
+			[
+				"g",
+				"global"
+			],
+			[
+				"if",
+				"if	if"
+			],
+			[
+				"var",
+				"var〔keyword〕"
+			],
+			[
+				"with",
+				"withTimestamps	withTimestamps"
+			],
+			[
+				"hr",
+				"hr	<hr>"
+			],
+			[
+				"end",
+				"endif"
+			],
+			[
+				"P",
+				"PostImage	PostImage"
+			],
+			[
+				"selec",
+				"select	<select>"
+			],
+			[
+				"gro",
+				"group1"
+			],
+			[
+				"class",
+				"classic"
+			],
+			[
+				"for",
+				"foreach	blade-foreach"
+			],
+			[
+				"sle",
+				"select	<select>"
+			],
+			[
+				"mobile_image",
+				"mobile_image_path"
+			],
+			[
+				"ima",
+				"$image〔variable〕"
+			],
+			[
+				"pa",
+				"panel"
+			],
+			[
+				"but",
+				"button"
+			],
+			[
+				"di",
+				"directories"
+			],
+			[
+				"sele",
+				"select2"
+			],
+			[
+				"crop",
+				"crop_list"
+			],
+			[
+				"im",
+				"import"
+			],
+			[
+				"lis",
+				"list-style-type: 〔property〕"
+			],
+			[
+				"list-style-",
+				"list-style-type: 〔property〕"
+			],
+			[
+				"l",
+				"li	Tag"
+			],
+			[
+				"mate",
+				"Material-Design-Icons"
+			],
+			[
+				"cla",
+				"class"
+			],
+			[
+				"has",
+				"hasMany〔function〕"
+			],
+			[
+				"els",
+				"els_remove_ver"
+			],
+			[
+				"cat",
+				"category"
+			],
+			[
+				"dire",
+				"directory"
+			],
+			[
+				"E",
+				"Equipment"
+			],
+			[
+				"t",
+				"target	Attr"
+			],
+			[
+				"meth",
+				"method_count"
+			],
+			[
+				"p",
+				"pyrocms"
+			],
+			[
+				"h",
+				"home"
+			],
+			[
+				"S",
+				"Schema"
+			],
+			[
+				"Schema",
+				"Schema::drop	Drop an existing database table"
+			],
+			[
+				"na",
+				"name"
+			],
+			[
+				"array_",
+				"array_combine〔function〕"
+			],
+			[
+				"ca",
+				"category"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"cate",
+				"categories"
+			],
+			[
+				"ba",
+				"backend"
+			],
+			[
+				"tabe",
+				"table"
+			],
+			[
+				"us",
+				"uses"
+			],
+			[
+				"Rou",
+				"Route::resource	Route to a RESTful Controller"
+			],
+			[
+				"categ",
+				"category"
+			],
+			[
+				"lan",
+				"landprep"
+			],
+			[
+				"Ro",
+				"Router::model	Register a model binder for a wildcard."
+			],
+			[
+				"vi",
+				"view()	mixed"
+			],
+			[
+				"res",
+				"resource"
+			],
+			[
+				"user",
+				"username1"
+			],
+			[
+				"use",
+				"username1"
+			],
+			[
+				"mysqli_",
+				"mysqli_query"
+			],
+			[
+				"G",
+				"Ghana"
+			],
+			[
+				"a",
+				"a	<a>"
+			],
+			[
+				"w",
+				"width	Attr"
+			],
+			[
+				"b",
+				"br	<br>"
+			],
+			[
+				"mys",
+				"mysql_connect"
+			],
+			[
+				"sea",
+				"search_row"
+			],
+			[
+				"mysql_f",
+				"mysql_fetch_assoc"
+			],
+			[
+				"search",
+				"search_results"
+			],
+			[
+				"mysql_num_",
+				"mysql_num_rows"
+			],
+			[
+				"msy",
+				"mysql_query"
+			],
+			[
+				"to",
+				"throw	Throw Exception"
+			],
+			[
+				"ec",
+				"echo	echo \"…\""
+			],
+			[
+				"err",
+				"error"
+			],
+			[
+				"ke",
+				"keywords"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"fo",
+				"font-style"
+			],
+			[
+				"font",
+				"font-style"
+			],
+			[
+				"ope",
+				"OpenSans-Light"
+			],
+			[
+				"Op",
+				"OpenSans"
+			],
+			[
+				"art",
+				"Article"
+			],
+			[
+				"ani",
+				"animal-cat"
+			],
+			[
+				"animal",
+				"animalCat"
+			],
+			[
+				"an",
+				"animalCat"
+			],
+			[
+				"array",
+				"array"
+			],
+			[
+				"sym",
+				"symptoms"
+			],
+			[
+				"bin",
+				"bindValue"
+			],
+			[
+				"in",
+				"incl	include …"
+			],
+			[
+				"head",
+				"header"
+			],
+			[
+				"fot",
+				"footer	Tag"
+			],
+			[
+				"li",
+				"li	Tag"
+			],
+			[
+				"hea",
+				"header	Tag"
+			],
+			[
+				"H",
+				"H1	Tag"
+			],
+			[
+				"back",
+				"background-position"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"loca",
+				"location"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"ac",
+				"action	Attr"
+			],
+			[
+				"em",
+				"empty"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"e",
+				"email"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/Http/routes.php",
+			"settings":
+			{
+				"buffer_size": 4066,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/layouts/app.blade.php",
+			"settings":
+			{
+				"buffer_size": 6293,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "resources/views/partials/modal/add_employee.blade.php",
+			"settings":
+			{
+				"buffer_size": 4121,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/dist/js/init.js",
+			"settings":
+			{
+				"buffer_size": 1437,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "resources/views/vendor/AdminLTE/partials/aside.blade.php",
+			"settings":
+			{
+				"buffer_size": 3658,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "composer.json",
+			"settings":
+			{
+				"buffer_size": 1535,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/leave_request/index.blade.php",
+			"settings":
+			{
+				"buffer_size": 1720,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "resources/laracogs/crud/Request.txt",
+			"settings":
+			{
+				"buffer_size": 593,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Owen/Laraprojects/myproject/app/Repositories/Notification/Notification.php",
+			"settings":
+			{
+				"buffer_size": 532,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Owen/Laraprojects/myproject/app/Http/Controllers/TeamController.php",
+			"settings":
+			{
+				"buffer_size": 4244,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Owen/Laraprojects/myproject/app/Http/routes.php",
+			"settings":
+			{
+				"buffer_size": 4463,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/manage_pages/employees.blade.php",
+			"settings":
+			{
+				"buffer_size": 1790,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "resources/views/home.blade.php",
+			"settings":
+			{
+				"buffer_size": 2552,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Owen/Laraprojects/laravel5-angular-adminlte-master/README.md",
+			"settings":
+			{
+				"buffer_size": 1838,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Owen/Laraprojects/ihelp/app/Http/Controllers/Backend/MethodController.php",
+			"settings":
+			{
+				"buffer_size": 4252,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 390.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Enable Package"
+			],
+			[
+				"PHP Code Sniffer: ",
+				"PHP Code Sniffer: Turn Execute On Save Off"
+			],
+			[
+				"Laravel ",
+				"Laravel Artisan: Help"
+			],
+			[
+				"",
+				"Git: Init"
+			],
+			[
+				"git",
+				"Git: Init"
+			]
+		],
+		"width": 510.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+			"artisan",
+			"composer",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Owen/Laraprojects/stang/resources",
+		"/C/Users/Owen/Laraprojects/stang/resources/views",
+		"/C/Users/Owen/Laraprojects/laravel5-angular-adminlte-master",
+		"/C/Users/Owen/Laraprojects/laravel5-angular-adminlte-master/node_modules"
+	],
+	"file_history":
+	[
+		"/C/Users/Owen/Laraprojects/myproject/gulpfile.js",
+		"/C/Users/Owen/Laraprojects/stang/app/User.php",
+		"/C/Users/Owen/Laraprojects/stang/app/Http/Controllers/HomeController.php",
+		"/C/Users/Owen/Laraprojects/AdminLTE-2.3.3/AdminLTE-2.3.3/index2.html",
+		"/C/Users/Owen/Laraprojects/stang/resources/views/vendor/AdminLTE/partials/header.blade.php",
+		"/C/Users/Owen/Downloads/backup-6.21.2016_00-59-18_elsenams.tar/backup-6.21.2016_00-59-18_elsenams/backup-6.21.2016_00-59-18_elsenams/homedir/public_html/wp-config.php",
+		"/C/Users/Owen/Laraprojects/wordpress/els/wp-content/plugins/order-sms-notification-woocommerce/classes/sms-gateways.php",
+		"/C/Users/Owen/Laraprojects/wordpress/els/wp-content/plugins/woocommerce-other-payment-gateway/class-woocommerce-other-payment-gateway.php",
+		"/C/Users/Owen/AppData/Local/Temp/fz3temp-1/class-woocommerce-other-payment-gateway.php",
+		"/C/Users/Owen/Laraprojects/wordpress/els/wp-content/plugins/woocommerce-other-payment-gateway/woocommerce-other-payment-gateway.php",
+		"/C/Users/Owen/Laraprojects/wordpress/els/wp-content/plugins/order-sms-notification-woocommerce/lib/infobip/vendor/infobip/oneapi/oneapi-sample-app/app.php",
+		"/C/Users/Owen/Laraprojects/wordpress/els/wp-content/plugins/order-sms-notification-woocommerce/lib/class.settings-api.php",
+		"/C/Users/Owen/Laraprojects/stang/resources/views/manage_pages/department.blade.php",
+		"/C/Users/Owen/Laraprojects/stang/public/dist/css/flat-ui.css",
+		"/C/Users/Owen/Laraprojects/stang/resources/views/partials/_sideNav.blade.php",
+		"/C/wamp/www/Flat-UI-master/less/modules/select.less",
+		"/C/Users/Owen/Laraprojects/stang/resources/assets/css/styles.css",
+		"/C/Users/Owen/AppData/Local/Temp/Rar$DIa0.216/rtl.css",
+		"/C/Users/Owen/Laraprojects/AdminLTE-2.3.3/AdminLTE-2.3.3/pages/tables/data.html",
+		"/C/Users/Owen/Laraprojects/AdminLTE-2.3.3/AdminLTE-2.3.3/dist/js/demo.js",
+		"/C/Users/Owen/Laraprojects/laravel-admin/angular/services/API.service.js",
+		"/C/Users/Owen/Laraprojects/stang/config/app.php",
+		"/C/Users/Owen/Laraprojects/stang/config/database.php",
+		"/C/Users/Owen/Laraprojects/stang/.env",
+		"/C/Users/Owen/Laraprojects/stang/phpunit.xml",
+		"/C/Users/Owen/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Owen/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Owen/Laraprojects/stang/app/Http/Controllers/BranchController.php",
+		"/C/Users/Owen/Laraprojects/stang/resources/views/test.blade.php",
+		"/C/Users/Owen/Laraprojects/stang/resources/views/partials/_nav.blade.php",
+		"/C/Users/Owen/Laraprojects/stang/app/Http/Controllers/DepartmentController.php",
+		"/D/oj/startboot/modern-business/modern-business/services.html",
+		"/C/Users/Owen/Laraprojects/stang/app/Http/Controllers/LeaveController.php",
+		"/C/Users/Owen/Laraprojects/stang/database/factories/ModelFactory.php",
+		"/C/Users/Owen/Laraprojects/stang/app/models/Leave.php",
+		"/C/Users/Owen/Laraprojects/stang/resources/views/leave_request/form.blade.php",
+		"/C/Users/Owen/Laraprojects/stang/resources/views/partials/modal/add_employee.blade.php",
+		"/C/Users/Owen/Laraprojects/stang/resources/views/employees/form.blade.php",
+		"/C/Users/Owen/Laraprojects/stang/resources/assets/js/init.js",
+		"/C/Users/Owen/Laraprojects/book/composer.json",
+		"/C/Users/Owen/Laraprojects/stang/resources/views/leave_request/index.blade.php",
+		"/C/Users/Owen/Laraprojects/stang/resources/views/home.blade.php",
+		"/C/Users/Owen/Laraprojects/stang/resources/views/app.blade.php",
+		"/C/Users/Owen/Laraprojects/stang/resources/views/auth/login.blade.php",
+		"/C/Users/Owen/Laraprojects/stang/gulpfile.js",
+		"/C/Users/Owen/Laraprojects/stang/resources/views/manage_pages/branch.blade.php",
+		"/C/Users/Owen/.homestead/Homestead.yaml",
+		"/C/Users/Owen/Laraprojects/stang/vendor/zizaco/entrust/src/Entrust/Traits/EntrustUserTrait.php",
+		"/C/Users/Owen/Laraprojects/stang/vendor/zizaco/entrust/src/Entrust/Entrust.php",
+		"/C/Users/Owen/Laraprojects/wordpress/els/wp-admin/includes/admin-filters.php",
+		"/C/Users/Owen/Laraprojects/wordpress/els/wp-admin/includes/admin.php",
+		"/C/Users/Owen/Laraprojects/wordpress/els/wp-load.php",
+		"/C/Users/Owen/Laraprojects/wordpress/els/wp-settings.php",
+		"/C/Users/Owen/Laraprojects/wordpress/els/wp-admin/admin.php",
+		"/C/Users/Owen/Laraprojects/wordpress/els/wp-admin/admin-functions.php",
+		"/C/Users/Owen/Laraprojects/wordpress/els/wp-config.php",
+		"/C/Users/Owen/Laraprojects/wordpress/els/wp-content/themes/storefront/functions.php",
+		"/C/Users/Owen/Laraprojects/wordpress/kwesibook/wp-config-sample.php",
+		"/C/Users/Owen/Laraprojects/book/app/Http/routes.php",
+		"/C/Users/Owen/Downloads/Video/laravel/vue/ang/learningl5-master/learningl5-master/app/Http/Controllers/GalleryController.php",
+		"/C/Users/Owen/Laraprojects/stang/database/migrations/2016_04_07_231009_create_leaves_table.php",
+		"/C/wamp/www/leave/controller/LeaveApplicationController.php",
+		"/C/Users/Owen/Laraprojects/stang/app/Http/Requests/Store/LeaveStoreRequest.php",
+		"/C/Users/Owen/Laraprojects/stang/resources/views/leave-type/form.blade.php",
+		"/C/Users/Owen/Laraprojects/stang/resources/views/manage_pages/employees.blade.php",
+		"/C/Users/Owen/Laraprojects/stang/resources/views/manage_pages/leaveType.blade.php",
+		"/C/Users/Owen/Laraprojects/stang/app/Http/Controllers/UserController.php",
+		"/C/Users/Owen/Laraprojects/stang/app/Http/Controllers/LeaveTypeController.php",
+		"/C/Users/Owen/Laraprojects/stang/resources/views/department/form.blade.php",
+		"/C/Users/Owen/Laraprojects/stang/app/Http/Requests/Update/UpdateDepartment.php",
+		"/C/Users/Owen/Laraprojects/medlook/resources/views/backend/users/confirm.blade.php",
+		"/C/Users/Owen/Laraprojects/stang/resources/views/partials/modal/delete_confirm/delete_branch.blade.php",
+		"/C/Users/Owen/Laraprojects/stang/resources/views/layouts/app.blade.php",
+		"/C/Users/Owen/AppData/Roaming/Sublime Text 3/Installed Packages/LaravelCollective HTML Form Snippets.sublime-package",
+		"/C/Users/Owen/Laraprojects/stang/resources/views/partials/modal/delete_confirm/delete_department.blade.php",
+		"/C/Users/Owen/Laraprojects/stang/resources/views/partials/modal/add_leave_type.blade.php",
+		"/C/Users/Owen/Downloads/basic-laravel-leave-management-master/basic-laravel-leave-management-master/artisan",
+		"/C/Users/Owen/Downloads/basic-laravel-leave-management-master/basic-laravel-leave-management-master/server.php",
+		"/C/Users/Owen/Downloads/basic-laravel-leave-management-master/basic-laravel-leave-management-master/app/routes.php",
+		"/C/Users/Owen/Downloads/basic-laravel-leave-management-master/basic-laravel-leave-management-master/app/controllers/LeavemanagementController.php",
+		"/C/Users/Owen/Downloads/basic-laravel-leave-management-master/basic-laravel-leave-management-master/app/models/Leave.php",
+		"/C/Users/Owen/Downloads/basic-laravel-leave-management-master/basic-laravel-leave-management-master/app/controllers/LeavesController.php",
+		"/C/Users/Owen/Laraprojects/stang/app/Http/Requests/Store/StoreEmployee.php",
+		"/C/Users/Owen/Laraprojects/stang/public/css/app.css",
+		"/C/Users/Owen/Laraprojects/ihelp/resources/views/backend/partials/_dashboardpanels.blade.php",
+		"/D/oj/startboot/startbootstrap-sb-admin-2-1.0.7/startbootstrap-sb-admin-2-1.0.7/dist/css/sb-admin-2.css",
+		"/D/oj/startboot/startbootstrap-sb-admin-2-1.0.7/startbootstrap-sb-admin-2-1.0.7/pages/blank.html",
+		"/D/oj/startboot/startbootstrap-sb-admin-2-1.0.7/startbootstrap-sb-admin-2-1.0.7/dist/js/sb-admin-2.js",
+		"/C/Users/Owen/Laraprojects/stang/public/css/style.css",
+		"/C/Users/Owen/Downloads/admin_side_menu (1).js",
+		"/C/Users/Owen/Downloads/admin_side_menu (1).html",
+		"/C/Users/Owen/Laraprojects/stang/public/js/style.js",
+		"/C/Users/Owen/Downloads/admin_side_menu.html",
+		"/C/Users/Owen/Laraprojects/stang/resources/views/partials/modal/delete_confirm/confirm.blade.php",
+		"/C/Users/Owen/Laraprojects/stang/app/Http/routes.php",
+		"/C/Users/Owen/Laraprojects/medlook/composer.json",
+		"/C/Users/Owen/Laraprojects/stang/composer.json",
+		"/C/Users/Owen/Laraprojects/stang/resources/views/auth.blade.php",
+		"/C/Users/Owen/Laraprojects/stang/resources/views/auth/passwords/reset.blade.php",
+		"/C/Users/Owen/Laraprojects/stang/resources/views/auth/passwords/email.blade.php",
+		"/C/wamp/www/ph2/resources/views/app.blade.php",
+		"/C/Users/Owen/AppData/Local/Temp/Rar$DIa0.527/LeavemanagementController.php",
+		"/C/Users/Owen/Downloads/Ftp ftadmin@begreenafrica.com.xml",
+		"/D/oj/startboot/startbootstrap-sb-admin-2-1.0.7/startbootstrap-sb-admin-2-1.0.7/pages/notifications.html",
+		"/C/Users/Owen/Laraprojects/ihelp/gulpfile.js",
+		"/C/Users/Owen/Laraprojects/ihelp/resources/js/admin.js",
+		"/C/Users/Owen/Laraprojects/ihelp/resources/assets/sass/partials/sbadmin.scss",
+		"/C/Users/Owen/Laraprojects/ihelp/resources/assets/sass/partials/metisMenu.scss",
+		"/D/oj/startboot/startbootstrap-sb-admin-2-1.0.7/startbootstrap-sb-admin-2-1.0.7/pages/index.html",
+		"/C/Users/Owen/Laraprojects/ihelp/resources/views/backend/partials/_nav.blade.php",
+		"/C/Users/Owen/Laraprojects/ihelp/resources/views/backend/partials/_sidenav.blade.php",
+		"/C/Users/Owen/Laraprojects/ihelp/resources/views/backend/pest/form.blade.php",
+		"/C/Users/Owen/Laraprojects/ihelp/resources/views/dash.blade.php",
+		"/C/Users/Owen/Laraprojects/stang/resources/views/partials/modal/add_branch.blade.php",
+		"/C/Users/Owen/Laraprojects/stang/resources/views/partials/modal/add_department.blade.php",
+		"/C/Users/Owen/AppData/Roaming/Sublime Text 3/Packages/Laravel 5 Artisan/Laravel 5 Artisan.sublime-settings",
+		"/C/Users/Owen/AppData/Roaming/Sublime Text 3/Packages/User/Laravel 5 Artisan.sublime-commands",
+		"/C/Users/Owen/Laraprojects/stang/public/index.php",
+		"/C/Users/Owen/Laraprojects/stang/resources/views/leave/form.blade.php",
+		"/C/Users/Owen/Laraprojects/stang/public/js/app.js",
+		"/C/Users/Owen/Laraprojects/ihelp/resources/views/backend/users/form.blade.php",
+		"/C/Users/Owen/Laraprojects/stang/resources/views/partials/modal/modal_footer.blade.php",
+		"/C/Users/Owen/Laraprojects/stang/database/migrations/2014_10_12_000000_create_users_table.php",
+		"/C/Users/Owen/Laraprojects/medlook/app/Http/routes.php",
+		"/C/Users/Owen/Laraprojects/stang/app.css",
+		"/C/Users/Owen/Laraprojects/ihelp/resources/js/init.js",
+		"/C/Users/Owen/Laraprojects/ihelp/database/migrations/2014_10_12_000000_create_users_table.php",
+		"/C/Users/Owen/Laraprojects/ihelp/resources/js/tablejs/datatables.js"
+	],
+	"find":
+	{
+		"height": 41.0
+	},
+	"find_in_files":
+	{
+		"height": 100.0,
+		"where_history":
+		[
+			"C:\\wamp\\www\\wordp\\els",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"remov",
+			"general el",
+			"click",
+			"modal",
+			"Select2",
+			"select2",
+			"select 2",
+			"select2",
+			"active",
+			"memory_limit",
+			"limit",
+			"dropdown",
+			"jquery",
+			">\n",
+			"active",
+			"nav",
+			"..",
+			"Ghana Cedi",
+			"GHS",
+			"login",
+			"screen",
+			"dropdown",
+			"select2",
+			"select",
+			"icons-font-path",
+			"$icons-font-path",
+			"font",
+			"select",
+			"mdi",
+			"icon",
+			"mul",
+			"multiple",
+			"select",
+			"example",
+			"id",
+			"tool",
+			"tooltip",
+			"Tools",
+			"Tool",
+			"Tools",
+			"myModalLabel",
+			"();\n",
+			"select2",
+			"select",
+			"selectlist",
+			"Select2 plugin",
+			"Select plugin",
+			"Select",
+			"select",
+			"multiselect",
+			"select",
+			"multiselect",
+			"tool",
+			"theme-name",
+			"theme",
+			"big",
+			"big-",
+			"bigth",
+			"big",
+			"big-theme",
+			"ipad",
+			");\n",
+			"log",
+			"APP_ENV",
+			"require",
+			"flash",
+			"dashboard",
+			"arrow",
+			"metis",
+			"bg-midnight-blue",
+			"footer",
+			"footer-2",
+			"footer",
+			"nav",
+			"radiocheck",
+			"$(':radio').radiocheck();",
+			"radio",
+			"respond",
+			"save",
+			"font",
+			"allowUser",
+			"cm",
+			"agro",
+			"agro-hub",
+			"Widget News",
+			"IMAGE",
+			"image_type",
+			"form",
+			"article",
+			"#content",
+			".html",
+			"Project Name",
+			"project name",
+			"start bootstrap",
+			"Start Bootstrap",
+			"start bootstrap",
+			"startbootsrap",
+			"footer",
+			"placeholder",
+			"col-md-4",
+			"col-md",
+			"sidebar",
+			"navbar-nav",
+			"navbar",
+			"=\"#\">",
+			"gkPage",
+			"gkPageContent",
+			"gkPage",
+			"data",
+			"validate",
+			"valid",
+			"require",
+			"validate",
+			"JHtml::_('bootstrap.framework')",
+			"footer",
+			"countdown",
+			"contact",
+			"theme",
+			"lab-test",
+			"contact",
+			"registration",
+			"lab-test",
+			"?>",
+			"line-height",
+			"email",
+			"contact",
+			"contactForm",
+			"contact"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"/css",
+			"css",
+			"",
+			"css",
+			"",
+			"PestCategories",
+			"Pest-category",
+			"Pest Category",
+			"Pest-category",
+			"Pest Caetgory",
+			"Pest Caetgor",
+			"modalLabel",
+			"Agro-HuB",
+			".php",
+			"Disease name",
+			"Pest name",
+			"Agro-Hub",
+			"email"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 13,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/Http/routes.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4066,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 295.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "resources/views/layouts/app.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6293,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 539.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "resources/views/partials/modal/add_employee.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4121,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 522.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "public/dist/js/init.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1437,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "resources/views/vendor/AdminLTE/partials/aside.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3658,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 645.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "composer.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1535,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								400,
+								400
+							]
+						],
+						"settings":
+						{
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "resources/views/leave_request/index.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1720,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								289,
+								289
+							]
+						],
+						"settings":
+						{
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "resources/laracogs/crud/Request.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 593,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/C/Users/Owen/Laraprojects/myproject/app/Repositories/Notification/Notification.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 532,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/C/Users/Owen/Laraprojects/myproject/app/Http/Controllers/TeamController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4244,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							],
+							[
+								1294,
+								1294
+							]
+						],
+						"settings":
+						{
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2707.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/C/Users/Owen/Laraprojects/myproject/app/Http/routes.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4463,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2163,
+								2163
+							]
+						],
+						"settings":
+						{
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1547.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "resources/views/manage_pages/employees.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1790,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "resources/views/home.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2552,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2430,
+								2430
+							]
+						],
+						"settings":
+						{
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 960.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "/C/Users/Owen/Laraprojects/laravel5-angular-adminlte-master/README.md",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1838,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1428,
+								1444
+							]
+						],
+						"settings":
+						{
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1140.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "/C/Users/Owen/Laraprojects/ihelp/app/Http/Controllers/Backend/MethodController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4252,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1835.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 44.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 359.0
+	},
+	"output.find_results":
+	{
+		"height": 101.0
+	},
+	"pinned_build_system": "",
+	"project": "stang.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"rou",
+				"myproject\\app\\Http\\routes.php"
+			],
+			[
+				"flat",
+				"stang\\public\\dist\\css\\flat-ui.css"
+			],
+			[
+				"entrustusertrait",
+				"vendor\\zizaco\\entrust\\src\\Entrust\\Traits\\EntrustUserTrait.php"
+			],
+			[
+				"",
+				"app\\Http\\Controllers\\LeaveController.php"
+			],
+			[
+				".e",
+				".env"
+			],
+			[
+				"leaver",
+				"C:\\Users\\Owen\\Laraprojects\\stang\\app\\Http\\Controllers\\LeaveController.php"
+			],
+			[
+				"lea",
+				"app\\Http\\Controllers\\LeaveController.php"
+			],
+			[
+				"_nav.",
+				"resources\\views\\partials\\_nav.blade.php"
+			],
+			[
+				"departmen",
+				"app\\Http\\Controllers\\DepartmentController.php"
+			],
+			[
+				"test.bl",
+				"resources\\views\\test.blade.php"
+			],
+			[
+				"route",
+				"app\\Http\\routes.php"
+			],
+			[
+				".",
+				".env"
+			],
+			[
+				"home",
+				"app\\Http\\Controllers\\HomeController.php"
+			],
+			[
+				"leaveco",
+				"stang\\app\\Http\\Controllers\\LeaveController.php"
+			],
+			[
+				"leave",
+				"stang\\app\\models\\Leave.php"
+			],
+			[
+				"leavec",
+				"stang\\app\\Http\\Controllers\\LeaveController.php"
+			],
+			[
+				"form.bl",
+				"stang\\resources\\views\\leave_request\\form.blade.php"
+			],
+			[
+				"rout",
+				"stang\\app\\Http\\routes.php"
+			],
+			[
+				"user",
+				"stang\\app\\Http\\Controllers\\UserController.php"
+			],
+			[
+				"branch",
+				"stang\\app\\Http\\Controllers\\BranchController.php"
+			],
+			[
+				"r",
+				"stang\\app\\Http\\routes.php"
+			],
+			[
+				"departmentc",
+				"stang\\app\\Http\\Controllers\\DepartmentController.php"
+			],
+			[
+				"homec",
+				"stang\\app\\Http\\Controllers\\HomeController.php"
+			],
+			[
+				"add_le",
+				"stang\\resources\\views\\partials\\modal\\add_leave_type.blade.php"
+			],
+			[
+				"pestcontr",
+				"ihelp\\resources\\js\\app\\controllers\\pestController.js"
+			],
+			[
+				"pest",
+				"ihelp\\app\\Http\\Controllers\\Backend\\PestController.php"
+			],
+			[
+				"imagere",
+				"ihelp\\app\\Logic\\Image\\ImageRepository.php"
+			],
+			[
+				"imagev",
+				"ihelp\\app\\Http\\Controllers\\Backend\\ImageviewController.php"
+			],
+			[
+				"pes",
+				"ihelp\\app\\Http\\Controllers\\Backend\\PestController.php"
+			],
+			[
+				"pagem",
+				"ihelp\\resources\\js\\app\\models\\pageModel.js"
+			],
+			[
+				"index.blade",
+				"ihelp\\public\\views\\backend\\pest\\index.blade.php"
+			],
+			[
+				"methodc",
+				"ihelp\\app\\Http\\Controllers\\Backend\\MethodController.php"
+			],
+			[
+				"meth",
+				"ihelp\\app\\Http\\Controllers\\Backend\\MethodController.php"
+			],
+			[
+				"toolc",
+				"ihelp\\app\\Http\\Controllers\\Backend\\ToolController.php"
+			],
+			[
+				"imagec",
+				"ihelp\\app\\ImageCategory.php"
+			],
+			[
+				"cropc",
+				"ihelp\\app\\Http\\Controllers\\Backend\\CropController.php"
+			],
+			[
+				"pages",
+				"ihelp\\app\\Http\\Controllers\\PagesController.php"
+			],
+			[
+				"post",
+				"ihelp\\app\\PostImage.php"
+			],
+			[
+				"form.blad",
+				"ihelp\\resources\\views\\backend\\pest\\form.blade.php"
+			],
+			[
+				"pestco",
+				"ihelp\\app\\Http\\Controllers\\Backend\\PestController.php"
+			],
+			[
+				"gul",
+				"ihelp\\gulpfile.js"
+			],
+			[
+				"gal",
+				"ihelp\\resources\\views\\backend\\media\\gallery.blade.php"
+			],
+			[
+				"dashboard",
+				"ihelp\\app\\Http\\Controllers\\Backend\\DashboardController.php"
+			],
+			[
+				"appc",
+				"ihelp\\resources\\js\\app\\controllers\\appController.js"
+			],
+			[
+				"tool",
+				"ihelp\\app\\Http\\Controllers\\Backend\\ToolController.php"
+			],
+			[
+				"form",
+				"ihelp\\resources\\views\\backend\\pest\\form.blade.php"
+			],
+			[
+				"form.b",
+				"ihelp\\resources\\views\\backend\\pestCategories\\form.blade.php"
+			],
+			[
+				"crop",
+				"ihelp\\app\\Crop.php"
+			],
+			[
+				"too",
+				"ihelp\\app\\Http\\Controllers\\Backend\\ToolController.php"
+			],
+			[
+				"logi",
+				"ihelp\\resources\\views\\auth\\login.blade.php"
+			],
+			[
+				"posti",
+				"ihelp\\app\\PostImage.php"
+			],
+			[
+				"resetp",
+				"ihelp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Auth\\ResetsPasswords.php"
+			],
+			[
+				"pestc",
+				"ihelp\\app\\Http\\Controllers\\Backend\\PestController.php"
+			],
+			[
+				"method",
+				"ihelp\\app\\Method.php"
+			],
+			[
+				"imager",
+				"ihelp\\app\\Logic\\Image\\ImageRepository.php"
+			],
+			[
+				"gallery.b",
+				"ihelp\\resources\\views\\backend\\media\\gallery.blade.php"
+			],
+			[
+				"image",
+				"app\\Logic\\Image\\ImageRepository.php"
+			],
+			[
+				"das",
+				"resources\\views\\dash.blade.php"
+			],
+			[
+				"gallery",
+				"resources\\views\\backend\\media\\gallery.blade.php"
+			],
+			[
+				"dash",
+				"resources\\views\\dash.blade.php"
+			],
+			[
+				"admin",
+				"resources\\js\\admin.js"
+			],
+			[
+				"gulpf",
+				"gulpfile.js"
+			],
+			[
+				"atag",
+				"resources\\views\\backend\\partials\\_ataglance.blade.php"
+			],
+			[
+				"flat-",
+				"public\\js\\vendor\\flat-ui.js"
+			],
+			[
+				"_na",
+				"resources\\views\\backend\\partials\\_nav.blade.php"
+			],
+			[
+				"gulp",
+				"gulpfile.js"
+			],
+			[
+				"_s",
+				"resources\\views\\backend\\partials\\_sidenav.blade.php"
+			],
+			[
+				"_n",
+				"resources\\views\\backend\\partials\\_nav.blade.php"
+			],
+			[
+				"authenticatesusers",
+				"ihelp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Auth\\AuthenticatesUsers.php"
+			],
+			[
+				"authenticate",
+				"ihelp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Auth\\AuthenticatesAndRegistersUsers.php"
+			],
+			[
+				"authen",
+				"ihelp\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\AuthenticateWithBasicAuth.php"
+			],
+			[
+				"authenticater",
+				"ph2\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Auth\\AuthenticatesAndRegistersUsers.php"
+			],
+			[
+				"index.bla",
+				"resources\\views\\backend\\pestCategories\\index.blade.php"
+			],
+			[
+				"index.bl",
+				"resources\\views\\backend\\tools\\index.blade.php"
+			],
+			[
+				"_",
+				"resources\\views\\backend\\partials\\_nav.blade.php"
+			],
+			[
+				"index.blad",
+				"resources\\views\\backend\\methods\\index.blade.php"
+			],
+			[
+				"eq",
+				"app\\Http\\Controllers\\Backend\\EquipmentController.php"
+			],
+			[
+				"cat",
+				"database\\seeds\\CategoriesTableSeeder.php"
+			],
+			[
+				"categ",
+				"app\\Http\\Controllers\\Backend\\CategoryController.php"
+			],
+			[
+				"users",
+				"app\\Http\\Controllers\\Backend\\UsersController.php"
+			],
+			[
+				"b035fb7c5d16c0b02b7ddd458353e817",
+				"storage\\framework\\views\\b035fb7c5d16c0b02b7ddd458353e817"
+			],
+			[
+				"equi",
+				"app\\Http\\Controllers\\Backend\\EquipmentController.php"
+			],
+			[
+				"form.",
+				"resources\\views\\backend\\methods\\form.blade.php"
+			],
+			[
+				"builder",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php"
+			],
+			[
+				"index.b",
+				"resources\\views\\backend\\methods\\index.blade.php"
+			],
+			[
+				"cate",
+				"app\\Category.php"
+			],
+			[
+				"create_",
+				"database\\migrations\\2015_12_28_224427_create_categories_table.php"
+			],
+			[
+				"apps",
+				"app\\Providers\\AppServiceProvider.php"
+			],
+			[
+				"back",
+				"public\\css\\backend.css"
+			],
+			[
+				"lan",
+				"app\\Http\\Controllers\\Backend\\LandPrepController.php"
+			],
+			[
+				"routes",
+				"app\\Http\\routes.php"
+			],
+			[
+				"land",
+				"app\\Http\\Controllers\\Backend\\LandPrepController.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\Owen\\Laraprojects\\ihelp\\ihelp.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 390.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"entr",
+				"Entrust"
+			]
+		],
+		"width": 878.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 298.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

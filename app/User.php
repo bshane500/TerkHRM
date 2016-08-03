@@ -1,0 +1,148 @@
+<?php
+
+	namespace App;
+
+	use App\Models\BankDetail;
+	use App\models\Branch;
+	use App\models\Department;
+	use App\Models\EmergencyContact;
+	use App\models\Leave;
+	use Illuminate\Foundation\Auth\User as Authenticatable;
+	use Zizaco\Entrust\Traits\EntrustUserTrait;
+
+	/**
+	 * Class User
+	 * @package App
+	 */
+	class User extends Authenticatable
+	{
+		use EntrustUserTrait;
+		/**
+		 * The attributes that are mass assignable.
+		 *
+		 * @var array
+		 */
+		protected $with = ['roles','bankDetails','emergencyContacts'];
+		protected $fillable =
+			[
+				'first_name',
+				'email',
+				'password',
+				'last_name',
+				'other_names',
+				'branch_id',
+				'department_id',
+				'date_of_birth',
+				'phone_number'
+			];
+		protected $dates = ['date_of_birth'];
+
+		/**
+		 * The attributes excluded from the model's JSON form.
+		 *
+		 * @var array
+		 */
+		protected $hidden = [
+			'password', 'remember_token',
+		];
+		//protected $with = ['leaveR'];
+
+		/**
+		 * @param $value
+		 */
+
+		public function setPasswordAttribute($value)
+		{
+			$this->attributes['password'] = bcrypt($value);
+		}
+
+		/**
+		 * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+		 */
+		public function branches()
+		{
+			return $this->belongsTo(Branch::class, 'branch_id');
+		}
+
+		/**
+		 * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+		 */
+		public function departments()
+		{
+			return $this->belongsTo(Department::class, 'department_id');
+		}
+
+		/**
+		 * @return \Illuminate\Database\Eloquent\Relations\HasMany
+		 */
+		public function leaveRequest()
+		{
+			return $this->hasMany(Leave::class, 'id', 'employee_id');
+		}
+
+
+		/**
+		 * @return string
+		 */
+		public function getFullNameAttribute()
+		{
+			return $this->first_name . " " . $this->last_name;
+		}
+
+
+		/**
+		 * @return mixed
+		 */
+		public function getRolesListAttribute()
+		{
+			return $this->roles->lists('id')->toArray();
+		}
+
+		/**
+		 * @return string
+		 */
+		public function getUsernameAttribute()
+		{
+			return $this->first_name . "-" . $this->last_name;
+		}
+
+
+		/**
+		 * @param $name
+		 */
+		public function hasRole($name)
+		{
+		}
+
+		public function can($ability, $arguments = [])
+		{
+
+		}
+
+		/**
+		 * @param $roles
+		 * @param $permission
+		 * @param $options
+		 */
+		public function ability($roles, $permission, $options)
+		{
+		}
+
+		/**
+		 * Each User has a Bank Account
+		 * @return \Illuminate\Database\Eloquent\Relations\HasOne
+		 */
+		public function bankDetails()
+		{
+		    return $this->hasOne(BankDetail::class,'user_id');
+		}
+
+		public function emergencyContacts()
+		{
+			return $this->hasMany(EmergencyContact::class);
+		}
+
+	}
+
+	//fixme fix CAN method with argument problem
+	//todo create a birthday reminder

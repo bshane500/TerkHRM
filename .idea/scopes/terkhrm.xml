@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="terkhrm" pattern="(file[stang]:app/Models//*||file[stang]:app/Repositories//*||file:app/Providers/viewServiceProvider.php||file[stang]:app/Http/Controllers//*)&amp;&amp;!file:app/Http/Controllers/Controller.php||file:config/constant.php" />
+</component>
