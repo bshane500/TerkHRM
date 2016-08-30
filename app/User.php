@@ -6,7 +6,9 @@
 	use App\models\Branch;
 	use App\models\Department;
 	use App\Models\EmergencyContact;
+	use App\Models\JobTitle;
 	use App\models\Leave;
+	use Carbon\Carbon;
 	use Illuminate\Foundation\Auth\User as Authenticatable;
 	use Zizaco\Entrust\Traits\EntrustUserTrait;
 
@@ -54,6 +56,16 @@
 		public function setPasswordAttribute($value)
 		{
 			$this->attributes['password'] = bcrypt($value);
+		}
+
+		/*public function getDateOfBirthAttribute($date)
+		{
+			return $this->attributes['date_of_birth'] = Carbon::parse('Y-m-d',$date);
+		}*/
+
+		public function jobTitles()
+		{
+			$this->hasOne(JobTitle::class);
 		}
 
 		/**
@@ -117,15 +129,6 @@
 		public function can($ability, $arguments = [])
 		{
 
-		}
-
-		/**
-		 * @param $roles
-		 * @param $permission
-		 * @param $options
-		 */
-		public function ability($roles, $permission, $options)
-		{
 		}
 
 		/**

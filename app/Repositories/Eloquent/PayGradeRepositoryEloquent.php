@@ -19,7 +19,6 @@
 
     use App\Models\PayGrade;
     use App\Repositories\Contracts\PayGradeRepository;
-    use Prettus\Repository\Eloquent\BaseRepository;
 
     /**
      * Class PayGradeRepositoryEloquent

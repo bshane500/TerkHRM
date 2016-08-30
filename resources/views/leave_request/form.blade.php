@@ -20,12 +20,11 @@
                             <label class="col-md-4 control-label" for="branch">Type of Leave</label>
                             <div class="col-md-6">
                                 <select name="leave_type_id" class="select select-primary select-block mbl form-control ">
-                                @foreach($leave_type as $ltype)
+                                @foreach($select['leave_type'] as $ltype)
                                   <option value="{{$ltype->id}}">{{$ltype->name}}</option>
                                 @endforeach
                                 </select>
                             </div>
-
                         </div>
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="reason">Reason</label>
@@ -36,13 +35,15 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="start_date">Start Date</label>
                             <div class="col-md-6">
-                                <input type="date" name="start_date" value=""  id="start_date" class="form-control requestdates">
+                                <input type="text" name="start_date" value=""  id="start_date"
+                                       class="form-control datepicker">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="end_date">End Date</label>
                             <div class="col-md-6">
-                                <input type="date" name="end_date" value=""  id="end_date" class="form-control requestdates">
+                                <input type="text" name="end_date" value=""  id="end_date"
+                                       class="form-control datepicker">
                             </div>
                         </div>
                         <div class="form-group">
@@ -67,9 +68,6 @@
                     var start_date = $('#start_date').val();
                     $.get('ajax/dates?start-date='+start_date+ '&end-date='+end_date,function(data){
                         $("#total_days").val(data);
-                        /*var totaldays = $('#total_days').val();
-                    var remainingDays = 21 - totaldays;*/
-                    //$('#remaining_days').val(remainingDays);
                     });
             });
         });

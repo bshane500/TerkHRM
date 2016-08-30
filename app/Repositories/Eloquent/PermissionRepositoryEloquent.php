@@ -19,7 +19,6 @@
 
     use App\Models\Permission;
     use App\Repositories\Contracts\PermissionRepository;
-    use Prettus\Repository\Eloquent\BaseRepository;
 
     /**
      * Class PermissionRepositoryEloquent

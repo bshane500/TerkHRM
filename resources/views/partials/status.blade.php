@@ -1,6 +1,21 @@
 @if (session('status'))
-    <div class="alert alert-success">
-        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-        {{ session('status') }}
-    </div>
+   <p hidden id="status">{{ session('status') }}</p>
+    <script>
+        toastr.options ={
+            "closeButton": true
+        };
+        toastr.success($('#status').text(), 'Notification');
+
+
+    </script>
+@endif
+
+@if (session('rejected'))
+    <p hidden id="status">{{ session('rejected') }}</p>
+    <script>
+        toastr.options = {
+            "closeButton": true
+        };
+        toastr.error($('#status').text(), 'Alert !!');
+    </script>
 @endif

@@ -17,7 +17,6 @@
     namespace App\Repositories\Eloquent;
     use App\Models\Department;
     use App\Repositories\Contracts\DepartmentRepository;
-    use Prettus\Repository\Eloquent\BaseRepository;
 
     /**
      * Class DepartmentRepositoryEloquent

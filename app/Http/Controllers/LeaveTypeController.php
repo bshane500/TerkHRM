@@ -35,8 +35,8 @@
          */
         public function index()
         {
-            $leaveTypes = $this->leaveType->paginate();
-            return view('manage_pages.leaveType', compact('leaveTypes'));
+            $leaveTypes = $this->leaveType->all();
+            return view('leave-type.index', compact('leaveTypes'));
         }
 
 

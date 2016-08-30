@@ -17,7 +17,6 @@
     namespace App\Repositories\Contracts;
 
 
-    use Prettus\Repository\Contracts\RepositoryInterface;
 
     /**
      * Interface LeaveRepository
@@ -31,6 +30,20 @@
          * @return mixed
          */
         public function getAllLeavesByUser($id);
-        public function qes();
+
+	    /**
+	     * Get Total Leave Days Requested
+	     * By a User
+	     * @return mixed
+	     */
+	    public function totalLeaveDaysByUser();
+
+	    /**
+	     * Send Email Corresponding to status of Request
+	     * @param $id
+	     * @param $view
+	     * @return mixed
+	     */
+	    public function sendMail($id, $view);
 
     }

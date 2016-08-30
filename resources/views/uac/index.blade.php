@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title','User Groups')
 @section('content')
     <div class="panel panel-default">
         <div class="panel-heading">
@@ -90,17 +91,7 @@
     @include('partials.modal.add_user_group')
     @include('partials.modal.add_permission')
     @include('partials.modal.attach_permissions')
-    <div class="pane panel-default">
-        <div class="panel-heading">
-            <ul>
-                @foreach($userg->users as $roles)
-                <li>
-                    {{$roles->first_name}}
-                </li>
-                    @endforeach
-            </ul>
-        </div>
-    </div>
+
 
     <script>
         $(document).on("click","#group-delete",function(e){

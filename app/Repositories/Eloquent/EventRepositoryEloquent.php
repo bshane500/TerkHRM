@@ -19,7 +19,6 @@
 
     use App\Models\Event;
     use App\Repositories\Contracts\EventRepository;
-    use Prettus\Repository\Eloquent\BaseRepository;
 
     /**
      * Class EventRepositoryEloquent

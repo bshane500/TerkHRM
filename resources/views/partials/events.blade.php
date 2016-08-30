@@ -17,7 +17,7 @@
                 <thead>
                 <tr>
                     <th>Title</th>
-                    <th>Date</th>
+                    <th>Venue</th>
                     <th>Date</th>
                 </tr>
                 </thead>
@@ -28,8 +28,8 @@
                     @foreach($events as $event)
                 <tr>
                     <td>{{$event->title}}</td>
-                    <td>{{$event->start_date_time->diffForHumans()}}</td>
-                    <td>{{$event->end_date_time->diffForHumans()}}</td>
+                    <td>{{$event->venue}}</td>
+                    <td>{{$event->end_date_time->format('d-m-Y')}}</td>
                 </tr>
                     @endforeach
                     @endif

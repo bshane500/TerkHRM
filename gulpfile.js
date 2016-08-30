@@ -1,7 +1,11 @@
-var elixir = require('laravel-elixir');
+     var elixir = require('laravel-elixir');
 
-var adminLte =  'node_modules/admin-lte/';
-var adminPlugins = adminLte+'plugins/';
+var packages = 'node_modules/',
+    adminLte = 'admin-lte/',
+    adminPlugins = adminLte + 'plugins/';
+
+
+
 
 /*
  |--------------------------------------------------------------------------
@@ -15,31 +19,48 @@ var adminPlugins = adminLte+'plugins/';
  */
 
 elixir(function(mix) {
+    /*
+    |--------------------------------------------------------------------------
+    | Copy Required assets to public folder
+    |--------------------------------------------------------------------------
+    */
     mix.copy('resources/assets/js/init.js','public/js');
     mix.copy('resources/assets/css/styles.css','public/css');
+    mix.copy(packages+adminPlugins+'jQuery','public/js/jQuery');
+    mix.copy(packages+adminPlugins+'bootstrap','public/bootstrap');
+    mix.copy(packages+adminPlugins+'jQueryUI','public/js/jQueryUI');
+    mix.copy(packages+adminPlugins+'daterangepicker/moment.min.js','public/js');
+    mix.copy(packages+'toastr/build/toastr.min.js','public/js');
+    mix.copy(packages+'toastr/build/toastr.css','public/css');
+    /*
+    |--------------------------------------------------------------------------
+    | Mix admin-LTE Template plugins  (JS)
+    |--------------------------------------------------------------------------
+    */
     mix.scripts([
-        'bootstrap/js/bootstrap.min.js',
+        adminLte+'bootstrap/js/bootstrap.min.js',
         adminPlugins+'datatables/jquery.dataTables.min.js',
         adminPlugins+'datatables/dataTables.bootstrap.min.js',
         adminPlugins+'select2/select2.full.js',
         adminPlugins+'iCheck/icheck.min.js',
-        adminPlugins+'date_picker/picker.js',
-        adminPlugins+'date_picker/picker.date.js',
         adminPlugins+'fullcalendar/fullcalendar.js',
         adminPlugins+'bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js',
         adminPlugins+'datepicker/bootstrap-datepicker.js',
-        'dist/js/app.js'
-    ],'public/js/app.js',adminLte);
+        adminLte+'dist/js/app.js'
+    ],'public/js/app.js',packages);
+    /*
+    |--------------------------------------------------------------------------
+    | Mix admin-LTE Template plugins (CSS)
+    |--------------------------------------------------------------------------
+    */
     mix.styles([
         adminPlugins+'select2/select2.css',
         adminPlugins+'iCheck/square/blue.css',
-        /*adminPlugins+'date_picker/themes/default.date.css',
-        adminPlugins+'date_picker/themes/default.css',*/
         adminPlugins+'fullcalendar/fullcalendar.css',
         adminPlugins+'bootstrap-wysihtml5/bootstrap3-wysihtml5.css',
         adminPlugins+'datepicker/datepicker3.css',
         adminPlugins+'datatables/dataTables.bootstrap.css',
-        'dist/css/adminLTE.css',
-        'dist/css/skins/_all-skins.css'
-    ],'public/css/app.css',adminLte)
+        adminLte+'dist/css/adminLTE.min.css',
+        adminLte+'dist/css/skins/_all-skins.css'
+    ],'public/css/app.css',packages)
 });

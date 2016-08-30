@@ -2,9 +2,9 @@
 @section('title','Add Event')
 @section('content')
 
-    <div class="panel panel-primary">
-            <div class="panel-heading">Event</div>
-            <div class="panel-body">
+    <div class="box box-primary">
+            <div class="box-header with-border">Event</div>
+            <div class="box-body">
                 {!! Form::model($event,
                         ['method' =>  $event-> exists ? 'put':'post',
                          'route'  =>  $event-> exists ? ['events.update',$event->id]:['events.store']

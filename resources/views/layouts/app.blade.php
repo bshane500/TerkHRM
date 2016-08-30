@@ -16,11 +16,15 @@
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     {{--Main CSS--}}
-    <link rel="stylesheet" href="{{asset('css/app.css')}}">
+
     <link rel="stylesheet" href="{{asset('css/styles.css')}}">
+    <link rel="stylesheet" href="{{asset('css/toastr.css')}}">
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
 
     <script src="{{asset('js/jQuery/jquery-2.2.3.min.js')}}"></script>
     <script src="{{asset('js/jQueryUi/jquery-ui.min.js')}}"></script>
+    <script src="{{asset('js/toastr.min.js')}}"></script>
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -69,27 +73,18 @@
             <!-- To the right -->
         </div>
         <!-- Default to the left -->
-        <strong>Copyright &copy; {{Date('Y')}} <a href="#">TerkTrendz Inc</a>.</strong> All rights
+        <strong>Copyright &copy; {{date('Y')}} <a href="#">TerkTrendz Inc</a>.</strong> All rights
         reserved.
     </footer>
 
-@include('vendor.AdminLTE.partials.control_side_bar')
-<!-- Add the sidebar's background. This div must be placed
-       immediately after the control sidebar -->
+    @include('vendor.AdminLTE.partials.control_side_bar')
     <div class="control-sidebar-bg"></div>
 </div>
 <!-- ./wrapper -->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
-
-<!-- AdminLTE App -->
-
+<script src="{{asset('js/moment.min.js')}}"></script>
 <script src="{{asset('js/app.js')}}"></script>
-{{--
-<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
---}}
 <script src="{{asset('js/init.js')}}"></script>
-
 
 </body>
 </html>

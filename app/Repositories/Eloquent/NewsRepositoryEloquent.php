@@ -19,7 +19,6 @@
 
     use App\Models\News;
     use App\Repositories\Contracts\NewsRepository;
-    use Prettus\Repository\Eloquent\BaseRepository;
 
     /**
      * Class NewsRepositoryEloquent

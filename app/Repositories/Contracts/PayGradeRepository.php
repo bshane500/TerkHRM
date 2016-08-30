@@ -17,8 +17,6 @@
     namespace App\Repositories\Contracts;
 
 
-    use Prettus\Repository\Contracts\RepositoryInterface;
-
     /**
      * Interface PayGradeRepository
      * @package App\Repositories\PayGrade

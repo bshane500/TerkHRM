@@ -1,8 +1,8 @@
 @extends('layouts.app')
 @section('title','Job Titles')
 @section('content')
-    <div class="panel panel-default">
-        <div class="panel-heading">
+    <div class="box box-primary">
+        <div class="box-header with-border">
             <a href="{{route('job-titles.create')}}" class="btn btn-primary">
                 <span><i class="fa fa-plus"></i> </span>
                 Add Job Title
@@ -34,13 +34,16 @@
                             <td>
                                 {{$job_title->job_description}}
                             </td>
-                            <td><a href="{{ route('job-titles.edit',$job_title->id) }}"><i
-                                            class="fa fa-edit"></i></a></td>
                             <td>
-                                {!! Form::open(['method'=>'delete','route'=>['job-titles.destroy',$job_title->id]]) !!}
-                                <button class="btn btn-danger btn-xs" type="submit" id="del"
-                                        onclick="return confirm('Are you sure?')">
-                                    <i class="fa fa-trash"></i>
+                                <a href="{{route('job-titles.edit',$job_title->id) }}"
+                                   class="edit-modal btn btn-sm btn-info">
+                                    <span class="glyphicon glyphicon-edit"></span> Edit
+                                </a>
+                            </td>
+                            <td>
+                                {!! Form::open(['method'=>'delete','route'=>['job-titles.destroy',$job_title->id]])!!}
+                                <button class="delete-modal btn btn-sm btn-danger" onclick="return confirm('Are you sure?')">
+                                    <span class="glyphicon glyphicon-trash"></span> Delete
                                 </button>
                                 {!! Form::close() !!}
                             </td>

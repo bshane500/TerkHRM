@@ -19,7 +19,6 @@
 
     use App\models\LeaveType;
     use App\Repositories\Contracts\LeaveTypeRepository;
-    use Prettus\Repository\Eloquent\BaseRepository;
 
 
     /**

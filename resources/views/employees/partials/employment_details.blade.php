@@ -11,7 +11,9 @@
         <!--Department-->
         <div class=form-group>
             {!! Form::label('department_id', 'Department') !!}
-            {!! Form::select('department_id',$departments,null, ['class' => 'form-control']) !!}
+            {!! Form::select('department_id',$select['departments'],null, ['class' =>
+            'form-control'])
+             !!}
         </div>
         <!--Social Security Number-->
         <div class=form-group>
@@ -22,7 +24,7 @@
         <!--Branch-->
         <div class=form-group>
             {!! Form::label('branch_id', 'Branch') !!}
-            {!! Form::select('branch_id',$branches,null, ['class' => 'form-control']) !!}
+            {!! Form::select('branch_id',$select['branches'],null, ['class' => 'form-control']) !!}
         </div>
     </div>
 
@@ -30,7 +32,7 @@
         <!--Job Title-->
         <div class=form-group>
             {!! Form::label('job_title', 'Job Title') !!}
-            {!! Form::select('job_title',$job_title,null, ['class' => 'form-control ',
+            {!! Form::select('job_title',$select['job_title'],null, ['class' => 'form-control ',
             'data-placeholder'=>'Select Job']) !!}
         </div>
 
@@ -42,7 +44,7 @@
 
         <div class="form-group">
             {!! Form::label('roles_list[]', 'User Roles') !!}
-            {!! Form::select('roles_list[]',$roles,null,
+            {!! Form::select('roles_list[]',$select['roles'],null,
             ['class' => 'form-control select2 multiselect-primary','multiple']) !!}
         </div>
 

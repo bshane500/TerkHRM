@@ -18,8 +18,7 @@
                 <th>Department</th>
                 <th>Branch</th>
                 <th>Privilege</th>
-                <th>Edit</th>
-                <th>Delete</th>
+                <th>Actions</th>
             </tr>
             </thead>
             <tbody>
@@ -41,8 +40,15 @@
                                     {{$role->display_name}}
                                 @endforeach
                             </td>
-                            <td><a href="{{ route('employees.edit',$employee->id) }}"><i class="fa fa-edit"></i></a></td>
-                            <td><a href="#"><i class="fa fa-remove"></i></a></td>
+                            <td>
+                                <a href="{{ route('employees.edit',$employee->id) }}"
+                                   class="edit-modal btn btn-sm btn-info">
+                                    <span class="glyphicon glyphicon-edit"></span> Edit
+                                </a>
+                                <a class="delete-modal btn btn-sm btn-danger">
+                                    <span class="glyphicon glyphicon-trash"></span> Delete
+                                </a>
+                            </td>
                         </tr>
                     @endforeach
                 @endif

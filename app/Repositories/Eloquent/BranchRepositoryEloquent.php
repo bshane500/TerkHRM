@@ -19,7 +19,6 @@
 
     use App\Models\Branch;
     use App\Repositories\Contracts\BranchRepository;
-    use Prettus\Repository\Eloquent\BaseRepository;
 
     /**
      * Class BranchRepositoryEloquent
@@ -40,4 +39,5 @@
         {
             return Branch::class;
         }
+
     }

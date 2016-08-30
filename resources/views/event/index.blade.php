@@ -1,8 +1,8 @@
 @extends('layouts.app')
 @section('title','Events')
 @section('content')
-    <div class="panel panel-default">
-        <div class="panel-heading">
+    <div class="box box-primary">
+        <div class="box-header with-border">
             <a href="{{route('events.create')}}" class="btn btn-primary" >
                 <span><i class="fa fa-plus"></i> </span>
                 Add Event

@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <link rel="stylesheet" href="{{asset('css/styles.css')}}">
 
+    <script src="{{asset('js/jQuery/jquery-2.2.3.min.js')}}"></script>
+    <script src="{{asset('js/jQueryUi/jquery-ui.min.js')}}"></script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -32,6 +35,9 @@
 <body class="hold-transition login-page">
 
  <!-- Main content -->
+ <div class="login-logo">
+     @yield('logo')
+ </div>
  <div class="login-box">
      <div class="login-box-body">
          @yield('content')
@@ -44,9 +50,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
 
 <!-- AdminLTE App -->
-
+ <script src="{{asset('js/moment.min.js')}}"></script>
 <script src="{{asset('js/app.js')}}"></script>
-<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 <script src="{{asset('js/init.js')}}"></script>
 
 

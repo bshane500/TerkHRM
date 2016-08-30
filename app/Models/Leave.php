@@ -50,9 +50,10 @@ class Leave extends Model
 
     /**
      * Sum the Total Days of Leaves Requested
+     * by a specific user
      * @return mixed
      */
-    public function getTotalDaysAttribute()
+    public function getTotalDays()
     {
         return $this->where('employee_id',Auth::user()->id)->sum('total_days_requested');
     }

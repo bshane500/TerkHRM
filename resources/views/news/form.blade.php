@@ -3,9 +3,9 @@
 @section('title','Add News')
 @section('content')
 
-    <div class="panel panel-primary">
-            <div class="panel-heading">Event</div>
-            <div class="panel-body">
+    <div class="box box-primary">
+            <div class="box-header with-border"><b>Event</b></div>
+            <div class=" box-body">
                 {!! Form::model($news,
                         ['method' =>  $news-> exists ? 'put':'post',
                          'route'  =>  $news-> exists ? ['news.update',$news->id]:['news.store']

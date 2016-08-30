@@ -1,9 +1,10 @@
 @extends('layouts.app')
 @section('title','Add Job Title')
 @section('content')
-        <div class="panel panel-primary">
-            <div class="panel-heading">Job Title</div>
-            <div class="panel-body">
+    <div class="col-lg-6 col-lg-offset-1">
+        <div class="box box-primary">
+            <div class="box-header with-border"><b>Add New Job Title</b></div>
+            <div class="box-body">
                 {!! Form::model($job_title,
                         ['method' =>  $job_title -> exists ? 'put':'post',
                          'route'  =>  $job_title -> exists ? ['job-titles.update',$job_title->id]:['job-titles.store']
@@ -21,8 +22,12 @@
                     {!! Form::textarea('job_specification',null, ['class' => 'form-control ','placeholder'=>'Job Specification','rows'=>'3']) !!}
                 </div>
                 <!--submit button-->
-                {!! Form::submit('Save!',['class'=>'btn btn-primary btn-wide' ])!!}
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </div>
                 {!! Form::close() !!}
             </div>
         </div>
+    </div>
+
 @endsection

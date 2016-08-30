@@ -22,11 +22,12 @@
 		/**
 		 * JobTitleController constructor.
 		 *
-		 * @param  $jobTitleService
+		 * @param JobTitleRepository $jobTitle
+		 *
 		 */
-		public function __construct(JobTitleRepository $jobTitleService)
+		public function __construct(JobTitleRepository $jobTitle)
 		{
-			$this->job_title = $jobTitleService;
+			$this->job_title = $jobTitle;
 		}
 
 		/**

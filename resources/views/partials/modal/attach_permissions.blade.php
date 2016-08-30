@@ -24,7 +24,9 @@
                         <label class="col-md-4 control-label" for="name">Select Role</label>
                         <div class="col-md-6">
                             <!--Role or User Group Name-->
-                            {!! Form::select('role',$roles,null, ['class' => 'form-control']) !!}
+                            {!! Form::select('role',$select['roles'],null, ['class' =>
+                            'form-control'])
+                             !!}
                         </div>
                     </div>
 
@@ -32,7 +34,8 @@
                         <label class="col-md-4 control-label" for="display_name">Permissions</label>
                         <div class="col-md-6">
                             <!--Role or User Group Name-->
-                            {!! Form::select('permissions[]',$perms,null, ['class' => 'form-control select2','multiple','placeholder'=>'Display Name']) !!}
+                            {!! Form::select('permissions[]',$select['perms'],null, ['class' =>
+                            'form-control select2','multiple','placeholder'=>'Display Name']) !!}
                         </div>
                     </div>
 

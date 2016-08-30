@@ -20,7 +20,6 @@
 	use App\Models\EmergencyContact;
 	use App\Repositories\Contracts\EmployeeRepository;
 	use App\User;
-	use Prettus\Repository\Eloquent\BaseRepository;
 
 	/**
 	 * Class EmployeeRepositoryEloquent
@@ -56,10 +55,10 @@
 		 *
 		 * @return mixed|void
 		 */
-		public function createUserWithRoles(array $attributes, $roles = [])
+		public function createUserWithRoles(array $attributes, $roles)
 		{
 			$user = $this->create($attributes);
-			$user->attachRole($roles);
+			$user->attachRoles($roles);
 			return true;
 		}
 
@@ -79,13 +78,13 @@
 				BankDetail::create($attributes['bankDetails'] + ['user_id' => $user_id]);
 		}
 
-		public function addEmergencyContacts(array $attributes,$user_id)
+		public function addEmergencyContacts(array $attributes, $user_id)
 		{
-			$contact = EmergencyContact::where('user_id',$user_id)->first();
-			if ($contact){
+			$contact = EmergencyContact::where('user_id', $user_id)->first();
+			if ($contact) {
 				$contact->fill($attributes)->save();
-			}else
-				EmergencyContact::create($attributes+['user_id'=>$user_id]);
+			} else
+				EmergencyContact::create($attributes + ['user_id' => $user_id]);
 		}
 
 		/**
@@ -103,7 +102,7 @@
 			$user->roles()->sync($roles);
 			$this->addBankDetails($attributes, $id);
 			//dd($attributes);
-			$this->addEmergencyContacts($attributes,$id);
+			$this->addEmergencyContacts($attributes, $id);
 
 			return true;
 		}

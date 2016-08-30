@@ -33,7 +33,7 @@ class DepartmentController extends Controller
     public function index()
     {
         $departments = $this->department->all();
-        return view('manage_pages.department',compact('departments'));
+        return view('department.index',compact('departments'));
     }
 
     /**

@@ -38,13 +38,14 @@
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="date_of_birth">Date Of Birth</label>
                         <div class="col-md-6">
-                            {!! Form::date('date_of_birth',null, ['class' => 'form-control']) !!}
+                            {!! Form::text('date_of_birth',null, ['class' => 'form-control
+                            dobdatepicker']) !!}
                         </div>                      
                     </div>
                     <div class="form-group">
                         <label for="roles" class="col-md-4 control-label">Roles</label>
-                        <div class="col-md-6">
-                            {!! Form::select('roles[]',$roles,null,
+                        <div class="col-md-6" style="width: 250px">
+                            {!! Form::select('roles[]',$select['roles'],null,
                             ['class' => 'form-control select2 multiselect-primary','multiple']) !!}
                         </div>
                     </div>
@@ -53,7 +54,8 @@
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="branch_id">Branch</label>
                         <div class="col-md-6">
-                            {!! Form::select('branch_id',$branches, null, ['class' => 'form-control
+                            {!! Form::select('branch_id',$select['branches'], null, ['class' =>
+                            'form-control
                            select-primary select-block mbl'])!!}
                         </div>
                         
@@ -61,7 +63,8 @@
                     <div class="form-group">
                     <label class="col-md-4 control-label" for="department_id">Department</label>
                     <div class="col-md-6">
-                        {!! Form::select('department_id',$departments, null, ['class' => 'form-control
+                        {!! Form::select('department_id',$select['departments'], null, ['class' =>
+                        'form-control
                           select-primary select-block mbl'])!!}
                     </div>
 

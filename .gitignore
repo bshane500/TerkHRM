@@ -1,7 +1,14 @@
 /vendor
 /node_modules
-/.idea
 /public/storage
 Homestead.yaml
 Homestead.json
 .env
+/public/js/
+
+/public/css/
+stang.sublime-project
+stang.sublime-workspace
+
+/public/bootstrap/
+/.idea/

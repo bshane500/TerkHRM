@@ -3,27 +3,22 @@
 @section('content')
 
 
-<div class="col-md-10">
-    <div class="panel panel-primary">
-        <div class="panel-heading">
-            <div>
-                <h6><i class="fa fa-fw fa-user"></i>
-                    Employee Name: {{$leaveRequest->employees->full_name}}
-                </h6>
-            </div>
+
+    <div class="'box box-primary">
+        <div class="box-header with-border">
+            <h4><i class="fa fa-fw fa-user"></i>
+                Employee Name: {{$leaveRequest->employees->full_name}}
+            </h4>
 
         </div>
-        <div class="panel-body">
-            <div class="row">
-                <h5>Leave Category:{{$leaveRequest->leaveCategory->name}}</h5>
-            </div>
-
+        <div class="box-body">
+            <h4>Leave Category:{{$leaveRequest->leaveCategory->name}}</h4>
             <hr/>
-            <h5>Start Date: {{$leaveRequest->start_date->format('d-m-Y')}}</h5>
+            <h4>Start Date: {{$leaveRequest->start_date->format('d-m-Y')}}</h4>
             <hr/>
-            <h5>End Date: {{$leaveRequest->end_date->format('d-m-Y')}}</h5>
+            <h4>End Date: {{$leaveRequest->end_date->format('d-m-Y')}}</h4>
             <hr/>
-            <h5>Total Days Requested: {{$leaveRequest->total_days}}</h5>
+            <h4>Total Days Requested: {{$leaveRequest->total_days}}</h4>
             <hr/>
             <p> {{$leaveRequest->reason}}</p>
             <hr/>
@@ -32,15 +27,15 @@
                 'route'  => ['leave-requests.update',$leaveRequest->id]
                ]) !!}
             <button type="submit" class="btn btn-primary" name="approve" value="approve">Approve</button>
-            <button type="submit" class="btn btn-info" name="onhold" value="onhold">On Hold</button>
+            <button type="submit" class="btn btn-info" name="on-hold" value="on-hold">On
+                Hold</button>
             <button type="submit" class="btn btn-danger" name="reject" value="reject">Reject</button>
             {!! Form::close() !!}
-
 
         </div>
     </div>
 
-</div>
+
 
 
 

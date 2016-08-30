@@ -74,3 +74,10 @@ div.list-group{
 .login-page, .register-page {
     background-color: #3c8dbc;
 }
+
+.datepicker{z-index:9999 !important}
+
+
+#add_employee > div > div > div.modal-body > form > div:nth-child(7) > div > span{
+    width: 250px;
+}

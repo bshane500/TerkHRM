@@ -2,9 +2,9 @@
 @section('title','Add Pay Grade')
 @section('content')
 
-        <div class="panel panel-primary">
-            <div class="panel-heading">Pay Grade</div>
-            <div class="panel-body">
+        <div class="box box-primary">
+            <div class="box-header with-header"><b>Add New Pay Grade</b></div>
+            <div class="box-body">
                 {!! Form::model($pay_grade,
                         ['method' =>  $pay_grade-> exists ? 'put':'post',
                          'route'  =>  $pay_grade-> exists ? ['pay-grades.update',$pay_grade->id]:['pay-grades.store']
@@ -31,7 +31,9 @@
                     {!! Form::text('maximum_amount',null, ['class' => 'form-control ','placeholder'=>'Maximum Amount']) !!}
                 </div>
                 <!--submit button-->
-                {!! Form::submit('Save',['class'=>'btn btn-primary btn-wide' ])!!}
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </div>
                 {!! Form::close() !!}
             </div>
         </div>

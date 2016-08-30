@@ -1,13 +1,14 @@
 @extends('layouts.app')
+@section('title','Leave Requests')
 @section('content')
-    <div class="panel panel-default">
-        <div class="panel-heading">
+    <div class="box box-primary">
+        <div class="box-header with-border">
             <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#leave_request">
                 <span><i class="fa fa-plus"></i> </span>
                 Request Leave
             </a>
         </div>
-        <div class="panel-body">
+        <div class="box-body">
             <table class="table table-hover" id="indexTables">
                 <thead>
                 <tr>

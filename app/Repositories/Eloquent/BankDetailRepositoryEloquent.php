@@ -2,7 +2,7 @@
 
 namespace App\Repositories\Eloquent;
 
-use Prettus\Repository\Eloquent\BaseRepository;
+
 use Prettus\Repository\Criteria\RequestCriteria;
 use App\Repositories\Contracts\BankDetailRepository;
 use App\Models\BankDetail;
@@ -31,4 +31,6 @@ class BankDetailRepositoryEloquent extends BaseRepository implements BankDetailR
     {
         $this->pushCriteria(app(RequestCriteria::class));
     }
+
+
 }

@@ -20,13 +20,13 @@
         <!--Date of Birth-->
         <div class=form-group>
             {!! Form::label('date_of_birth', 'Date of Birth') !!}
-            {!! Form::date('date_of_birth',null, ['class' => 'form-control datepicker']) !!}
+            {!! Form::text('date_of_birth',null, ['class' => 'form-control dobdatepicker']) !!}
         </div>
 
         <!--Country-->
         <div class=form-group>
             {!! Form::label('country', 'Country') !!}
-            {!! Form::select('country',$departments,null, ['class' => 'form-control']) !!}
+            {!! Form::select('country',$select['departments'],null, ['class' => 'form-control']) !!}
         </div>
     </div>
 

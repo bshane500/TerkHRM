@@ -18,7 +18,7 @@
 		'reject'           => '0',
 		/*
 		|--------------------------------------------------------------------------
-		| Default Password that should assigned to users when created
+		| Default Password that should be assigned to users when created
 		|--------------------------------------------------------------------------
 		*/
 		'defaultPassword'  => 'secret'

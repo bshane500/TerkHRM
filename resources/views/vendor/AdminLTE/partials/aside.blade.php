@@ -20,7 +20,7 @@
         <form action="#" method="get" class="sidebar-form">
             <div class="input-group">
                 <input type="text" name="q" class="form-control" placeholder="Search...">
-              <span class="input-group-btn">
+                <span class="input-group-btn">
                 <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i
                             class="fa fa-search"></i>
                 </button>
@@ -33,26 +33,43 @@
         <ul class="sidebar-menu">
             <li class="header">Main Navigation</li>
             <!-- Optionally, you can add icons to the links -->
-            <li class="active"><a href="/"><i class="fa fa-dashboard"></i>
+            <li class="active"><a href="/dashboard"><i class="fa fa-dashboard"></i>
                 <span>Dashboard</span></a>
             </li>
-            <li><a href="{{ route('employees.index') }}"><i class="fa fa-link">
-                </i> <span>Employees</span></a>
+            <li>
+                <a href="{{ route('employees.index') }}"><i class="fa fa-link">
+                    </i> <span>Employees</span>
+                </a>
             </li>
-            <li><a href="{{ route('departments.index') }}"><i class="fa fa-link"></i> <span>Departments</span></a>
+            <li class="treeview">
+                <a href="#"><i class="fa fa-building"></i> <span>Organization</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="{{ route('departments.index') }}">Departments</a>
+                    <li class=""><a href="{{ route('branches.index') }}">Branches</a>
+                </ul>
             </li>
             <li class="treeview">
                 <a href="#"><i class="fa fa-link"></i> <span>Leave Management</span>
-                    <i class="fa fa-angle-left pull-right"></i>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="{{ route('leave-types.index') }}">Leave Categories</a></li>
+                    <li  {{Request::is('leave-types.index')?'class=active':''}}><a href="{{ route
+                    ('leave-types.index') }}">Leave
+                            Categories</a></li>
                     <li><a href="{{ route('leave-requests.index') }}">Leave Requests</a></li>
                 </ul>
             </li>
             <li class="treeview">
                 <a href="#"><i class="fa fa-link"></i><span>Job</span>
-                    <i class="fa fa-angle-left pull-right"></i>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
                 </a>
                 <ul class="treeview-menu">
                     <li><a href="{{ route('job-titles.index') }}">Job Titles</a></li>
@@ -62,7 +79,9 @@
 
             <li class="treeview">
                 <a href="#"><i class="fa fa-link"></i><span>News & Events</span>
-                    <i class="fa fa-angle-left pull-right"></i>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
                 </a>
                 <ul class="treeview-menu">
                     <li><a href="{{ route('news.index') }}">News</a></li>
@@ -72,11 +91,24 @@
 
 
             <li class="treeview">
-                <a href="#"><i class="fa fa-link"></i> <span>User Management</span> <i
-                            class="fa fa-angle-left pull-right"></i></a>
+                <a href="#"><i class="fa fa-link"></i> <span>User Management</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
                 <ul class="treeview-menu">
                     <li><a href="{{url('admin/user-group')}}">Roles</a></li>
-                    <li><a href="{{url('admin/ormaa')}}">Permissions</a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#"><i class="fa fa-link"></i> <span>Recruitment</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="{{url('recruitment/vacancies')}}">Candidates</a></li>
+                    <li><a href="{{url('recruitment/vacancies')}}">Vacancies</a></li>
                 </ul>
             </li>
         </ul>

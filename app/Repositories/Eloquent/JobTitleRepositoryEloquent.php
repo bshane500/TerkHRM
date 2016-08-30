@@ -19,7 +19,7 @@
 
     use App\Models\JobTitle;
     use App\Repositories\Contracts\JobTitleRepository;
-    use Prettus\Repository\Eloquent\BaseRepository;
+
 
     /**
      * Class JobTitleRepositoryEloquent
@@ -31,7 +31,7 @@
 
         public function showForm()
         {
-            $job_title = new JobTitle();
+            $job_title = new $this->model();
             return view('job_title.form',compact('job_title'));
         }
 

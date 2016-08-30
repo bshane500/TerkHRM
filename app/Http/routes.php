@@ -34,6 +34,13 @@
 			return redirect()->guest('login');
 		});
 		Route::auth();
+		/*
+		|--------------------------------------------------------------------------
+		| Public Routes
+		|--------------------------------------------------------------------------
+		*/
+		Route::get('job-listings',['as'=>'job-listings','uses'=>'Recruitment\VacancyController@jobs']);
+		Route::get('job-listings/{name}',['as'=>'job-listings','uses'=>'Recruitment\VacancyController@show']);
 
 		/*
 		|--------------------------------------------------------------------------
@@ -43,7 +50,7 @@
 
 		Route::group(['middleware' => 'auth'], function () {
 
-			Route::get('dashboard', 'HomeController@index');
+			Route::get('dashboard',['as'=>'dashboard','uses'=> 'HomeController@index']);
 
 
 			/*
@@ -90,6 +97,16 @@
 			*/
 			Route::resource('news', 'News\NewsController');
 			Route::resource('events', 'News\EventController');
+
+			/*
+			|--------------------------------------------------------------------------
+			| Recruitment (Vacancies/Candidates)
+			|--------------------------------------------------------------------------
+			*/
+			Route::group(['prefix'=>'recruitment'],function (){
+				Route::resource('vacancies','Recruitment\VacancyController');
+				Route::resource('candidates','Recruitment\CandidateController');
+			});
 			/*
 			|--------------------------------------------------------------------------
 			| Leave Requests
@@ -114,3 +131,4 @@
 
 		});
 	});
+

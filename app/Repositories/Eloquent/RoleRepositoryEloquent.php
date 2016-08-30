@@ -19,7 +19,6 @@
 
     use App\models\Role;
     use App\Repositories\Contracts\RoleRepository;
-    use Prettus\Repository\Eloquent\BaseRepository;
 
     /**
      * Class RoleRepositoryEloquent
