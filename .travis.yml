@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 language: php
 php:
  -5.5
@@ -7,3 +8,14 @@ php:
  -composer install
 script:
  phpunit Test.php
+=======
+language: php
+php:
+  - 5.5
+  - 5.6
+ before_script:
+  - composer self-update
+  - composer install
+script:
+  phpunit Test.php
+>>>>>>> origin/master
