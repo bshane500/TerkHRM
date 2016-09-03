@@ -3,12 +3,14 @@
 	namespace App\Http\Controllers\Recruitment;
 
 	use App\Repositories\Contracts\CandidateRepository;
+	use App\Repositories\Contracts\VacancyRepository;
 	use Illuminate\Http\Request;
 
 	use App\Http\Requests;
 	use App\Http\Controllers\Controller;
+    use Illuminate\Support\Facades\Input;
 
-	/**
+    /**
 	 * Class CandidateController
 	 * @package App\Http\Controllers\Recruitment
 	 */
@@ -17,15 +19,16 @@
 		/**
 		 * @var CandidateRepository
 		 */
-		protected  $candidate;
+		protected  $candidate,$vacancy;
 
 		/**
 		 * CandidateController constructor.
 		 * @param CandidateRepository $candidate
 		 */
-		public function __construct(CandidateRepository $candidate)
+		public function __construct(CandidateRepository $candidate,VacancyRepository $vacancy)
 		{
 			$this->candidate  = $candidate;
+			$this->vacancy  = $vacancy;
 		}
 
 		/**
@@ -34,16 +37,20 @@
 		 */
 		public function index()
 		{
-			//
+            $candidates = $this->candidate->all();
+            return view('recruitment.candidates.index',compact('candidates'));
 		}
 
 		/**
 		 * Show the form for creating a new resource.
+		 * @param $vacancy
 		 * @return \Illuminate\Http\Response
 		 */
-		public function create()
+		public function create($vacancy)
 		{
-			//
+			$job= $this->vacancy->findByField('vacancy_name',$vacancy);
+
+			return view('recruitment.candidates.candidate_form',compact('job'));
 		}
 
 		/**
@@ -53,8 +60,9 @@
 		 */
 		public function store(Request $request)
 		{
-			$this->candidate->create($request->all());
-			return redirect(route('recruitment.candidates.index'))
+			$candidate = $this->candidate->create($request->all());
+            $this->candidate->sendMail($candidate->id,'application_received');
+			return redirect(route('jobs'))
 				->with('status', 'Application Received');
 		}
 
@@ -86,7 +94,13 @@
 		 */
 		public function update(Request $request, $id)
 		{
-
+            if ($request->has('shortlist'))
+            {
+                $this->candidate->update(['application_status'=>'short-listed'],$id);
+                return redirect(route('recruitment.candidates.index'))->with('status','Short Listed');
+            }
+            else
+               return redirect(route('recruitment.candidates.index'));
 		}
 
 		/**

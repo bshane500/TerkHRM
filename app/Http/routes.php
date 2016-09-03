@@ -39,8 +39,10 @@
 		| Public Routes
 		|--------------------------------------------------------------------------
 		*/
-		Route::get('job-listings',['as'=>'job-listings','uses'=>'Recruitment\VacancyController@jobs']);
+		Route::get('job-listings',['as'=>'jobs','uses'=>'Recruitment\VacancyController@jobs']);
+		Route::get('mine','UserController@mine');
 		Route::get('job-listings/{name}',['as'=>'job-listings','uses'=>'Recruitment\VacancyController@show']);
+		Route::get('job-listings/{vacancy}/apply',['as'=>'job-listings.apply','uses'=>'Recruitment\CandidateController@create']);
 
 		/*
 		|--------------------------------------------------------------------------

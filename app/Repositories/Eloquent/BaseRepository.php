@@ -1,5 +1,5 @@
 <?php
-/**
+/*
  *
  * |--------------------------------------------------------------------------
  * | Package: TerkHRM
@@ -7,7 +7,7 @@
  * |Author:  Owen Jubilant  [TerkTrendz Inc, http://terktrendz.com]
  * |Copyright (c)  2016
  * |--------------------------------------------------------------------------
- * /
+ *
  */
 
 
@@ -22,8 +22,9 @@
 
 
 	use App\Repositories\Contracts\RepositoryInterface;
+    use Illuminate\Support\Facades\Mail;
 
-	abstract class BaseRepository extends \Prettus\Repository\Eloquent\BaseRepository implements
+    abstract class BaseRepository extends \Prettus\Repository\Eloquent\BaseRepository implements
 		RepositoryInterface
 	{
 		/**
@@ -34,4 +35,16 @@
 		{
 			return new $this->model();
 		}
+
+        public function sendMail($id,$view)
+        {
+            $user = $this->find($id);
+            Mail::send('emails.' . $view, ['user' => $user], function ($m) use ($user) {
+                $m->from('hello@app.com', 'TerkHRM');
+                # Sending Mail
+                $m->to($user->employees->email, $user->employees->first_name)->subject('Your Reminder!');
+            });
+            return true;
+		}
+
 	}

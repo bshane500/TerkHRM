@@ -28,4 +28,13 @@
     {
 	    public function  showForm();
 
+
+        /**
+         * Send Email users,candidates etc
+         * @param $id
+         * @param $view
+         * @return mixed
+         */
+        public function sendMail($id, $view);
+
     }

@@ -24,7 +24,7 @@
 		 *
 		 * @var array
 		 */
-		protected $with = ['roles','bankDetails','emergencyContacts'];
+		protected $with = ['roles','bankDetails'];
 		protected $fillable =
 			[
 				'first_name',

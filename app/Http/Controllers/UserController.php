@@ -39,8 +39,13 @@
 		public function index()
 		{
 
-			$employees = $this->users->all();
+			$employees = $this->users->paginate();
 			return view('employees.index', compact('employees'));
+		}
+
+		public function mine()
+		{
+			return $this->users->all();
 		}
 
 		/**
@@ -68,20 +73,7 @@
 
 		}
 
-		public function bankDetails()
-		{
 
-		}
-
-		public function emergencyContact()
-		{
-
-		}
-
-		public function dependents()
-		{
-
-		}
 
 		/**
 		 * Display the specified resource.

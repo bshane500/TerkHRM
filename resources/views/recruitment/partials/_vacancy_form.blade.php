@@ -31,7 +31,7 @@
     <div class="form-group">
         {!! Form::label('description', 'Description',['class'=>'col-md-2']) !!}
         <div class="col-sm-10">
-            {!! Form::textarea('description',null, ['class' => 'form-control textarea',
+            {!! Form::textarea('description',null, ['class' => 'form-control',
             'placeholder'=>'Description','rows'=>'3']) !!}
         </div>
 

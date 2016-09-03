@@ -3,6 +3,7 @@
 namespace App\Repositories\Eloquent;
 
 
+use Illuminate\Support\Facades\Mail;
 use Prettus\Repository\Criteria\RequestCriteria;
 use App\Repositories\Contracts\CandidateRepository;
 use App\Models\Candidate;
@@ -24,7 +25,16 @@ class CandidateRepositoryEloquent extends BaseRepository implements CandidateRep
         return Candidate::class;
     }
 
-    
+    public function sendMail($id, $view)
+    {
+        $candidate = $this->find($id);
+        Mail::send('emails.' . $view, ['candidate' => $candidate], function ($m) use ($candidate) {
+            $m->from('hello@app.com', 'TerkHRM');
+            # Sending Mail
+            $m->to($candidate->email, $candidate->first_name)->subject('Application Received');
+        });
+        return true;
+    }
 
     /**
      * Boot up the repository, pushing criteria

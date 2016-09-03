@@ -56,16 +56,7 @@
 		 * @param $view
 		 * @return mixed
 		 */
-		public function sendMail($id, $view)
-		{
-			$user = $this->find($id);
-			Mail::send('emails.' . $view, ['user' => $user], function ($m) use ($user) {
-				$m->from('hello@app.com', 'TerkHRM');
-				# Sending Mail
-				$m->to($user->employees->email, $user->employees->first_name)->subject('Your Reminder!');
-			});
-			return true;
-		}
+
 
 
 		/**

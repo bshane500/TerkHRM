@@ -44,6 +44,5 @@
 	     * @param $view
 	     * @return mixed
 	     */
-	    public function sendMail($id, $view);
 
     }

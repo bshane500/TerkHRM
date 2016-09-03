@@ -57,6 +57,7 @@
 		 */
 		public function jobs()
 		{
+			//todo extract to separate controller
 			$vacancies = $this->vacancy->paginate();
 			return view('recruitment.job-listings',compact('vacancies'));
 		}

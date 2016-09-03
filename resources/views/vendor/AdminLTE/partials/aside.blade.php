@@ -33,10 +33,10 @@
         <ul class="sidebar-menu">
             <li class="header">Main Navigation</li>
             <!-- Optionally, you can add icons to the links -->
-            <li class="active"><a href="/dashboard"><i class="fa fa-dashboard"></i>
+            <li class=""><a href="/dashboard"><i class="fa fa-dashboard"></i>
                 <span>Dashboard</span></a>
             </li>
-            <li>
+            <li {{Request::is('*employees') ? 'class=active':''}}>
                 <a href="{{ route('employees.index') }}"><i class="fa fa-link">
                     </i> <span>Employees</span>
                 </a>
@@ -48,8 +48,10 @@
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="{{ route('departments.index') }}">Departments</a>
-                    <li class=""><a href="{{ route('branches.index') }}">Branches</a>
+                    <li {{Request::is('*departments') ? 'class=active':''}}><a href="{{ route
+                    ('departments.index') }}">Departments</a>
+                    <li {{Request::is('*branches') ? 'class=active':''}}><a href="{{ route
+                    ('branches.index') }}">Branches</a>
                 </ul>
             </li>
             <li class="treeview">
@@ -59,9 +61,7 @@
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li  {{Request::is('leave-types.index')?'class=active':''}}><a href="{{ route
-                    ('leave-types.index') }}">Leave
-                            Categories</a></li>
+                    <li><a href="{{ route('leave-types.index') }}">LeaveCategories</a></li>
                     <li><a href="{{ route('leave-requests.index') }}">Leave Requests</a></li>
                 </ul>
             </li>
@@ -107,7 +107,7 @@
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="{{url('recruitment/vacancies')}}">Candidates</a></li>
+                    <li><a href="{{url('recruitment/candidates')}}">Candidates</a></li>
                     <li><a href="{{url('recruitment/vacancies')}}">Vacancies</a></li>
                 </ul>
             </li>

@@ -14,6 +14,7 @@
                     <th>Vacancy Name</th>
                     <th>Job Title</th>
                     <th>Hiring Manager</th>
+                    <th>Status</th>
                     <th>Edit</th>
                     <th>Delete</th>
                 </tr>
@@ -29,7 +30,7 @@
                             <td>
                                 {{$vacancy->vacancy_name}}
                             </td>
-                            <td>{{$vacancy->job_title->id}}</td>
+                            <td>{{$vacancy->job_title->job_title}}</td>
                             <td>{{$vacancy->hiring_manager}}</td>
                             <td>
                                 <a href="{{route('recruitment.vacancies.edit',$vacancy->id) }}"

@@ -23,9 +23,8 @@
 			return Vacancy::class;
 		}
 
-		public function sendMail(){
 
-		}
+
 
 
 
