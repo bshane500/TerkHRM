@@ -36,6 +36,7 @@
 		 */
 		public function ajaxTotalDays()
 		{
+		    //todo extract to  interface
 			$start_input = Input::get('start-date');
 			$end_input = Input::get('end-date');
 			$start_date = Carbon::createFromFormat('Y-m-d', $start_input);

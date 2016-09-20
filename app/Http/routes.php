@@ -40,8 +40,7 @@
 		|--------------------------------------------------------------------------
 		*/
 		Route::get('job-listings',['as'=>'jobs','uses'=>'Recruitment\VacancyController@jobs']);
-		Route::get('mine','UserController@mine');
-		Route::get('job-listings/{name}',['as'=>'job-listings','uses'=>'Recruitment\VacancyController@show']);
+        Route::post('job-listings','Recruitment\ApplicantController@store');
 		Route::get('job-listings/{vacancy}/apply',['as'=>'job-listings.apply','uses'=>'Recruitment\CandidateController@create']);
 
 		/*
@@ -52,9 +51,19 @@
 
 		Route::group(['middleware' => 'auth'], function () {
 
+		    /*
+		    |--------------------------------------------------------------------------
+		    | Dashboard
+		    |--------------------------------------------------------------------------
+		    */
 			Route::get('dashboard',['as'=>'dashboard','uses'=> 'HomeController@index']);
 
-
+            /*
+            |--------------------------------------------------------------------------
+            | Settings
+            |--------------------------------------------------------------------------
+            */
+            Route::any('settings',['as'=>'settings','uses'=>'HomeController@settings']);
 			/*
 			|--------------------------------------------------------------------------
 			| Departments
@@ -108,6 +117,9 @@
 			Route::group(['prefix'=>'recruitment'],function (){
 				Route::resource('vacancies','Recruitment\VacancyController');
 				Route::resource('candidates','Recruitment\CandidateController');
+                Route::get('candidates/resumes/{resume}',function ($resume){
+                    return response()->download(public_path('resumes/'.$resume));
+                });
 			});
 			/*
 			|--------------------------------------------------------------------------

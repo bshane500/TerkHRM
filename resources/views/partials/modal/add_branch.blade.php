@@ -10,13 +10,13 @@
             </div>
             <div class="modal-body">
 
-                <form class="form-horizontal" method="post">
+                <form class="form-horizontal" role="form">
                     {!! csrf_field() !!}
 
                     <fieldset>
 
                         <!-- Text input-->
-                        <div class="form-group">d
+                        <div class="form-group">
                             <label class="col-md-4 control-label" for="branch_name">Branch
                                 Name</label>
                             <div class="col-md-6">
@@ -39,7 +39,7 @@
                             <label class="col-md-4 control-label" for="region">Region</label>
                             <div class="col-md-4">
                                 <select id="region" name="region"
-                                        class="select select-primary select-block mbl form-control ">
+                                        class="select2 select-primary select-block mbl form-control ">
                                     <option value="Greater Accra">Greater Accra</option>
                                     <option value="Volta">Volta</option>
                                     <option value="Western">Western</option>

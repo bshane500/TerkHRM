@@ -17,8 +17,9 @@ class Candidate extends Model implements Transformable
         'email',
         'phone_number',
         'note',
-        'application_status',
+        'status',
         'vacancy_id',
+        'resume'
     ];
 
     public function vacancy()

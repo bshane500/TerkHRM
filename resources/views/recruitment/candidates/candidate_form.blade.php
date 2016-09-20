@@ -6,8 +6,8 @@
                 {{$j->vacancy_name}}
             </div>
         <div class="box-body">
-            {!! Form::open(['url'=>route('recruitment.candidates.store'),'class'=>'form-horizontal',
-            'method'=>'post']) !!}
+            {!! Form::open(['action'=>'Recruitment\ApplicantController@store','class'=>'form-horizontal',
+            'method'=>'post','files'=>'true']) !!}
             <input name="vacancy_id" type="text" hidden value="{{$j->id}}">
                @include('recruitment.partials._candidate_form')
             {!! Form::close() !!}

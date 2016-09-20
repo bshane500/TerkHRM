@@ -16,9 +16,12 @@ class CreateBranchesTable extends Migration
             $table->increments('id');
             $table->string('name')->unique()->index();
             $table->string('branch_code')->unique();
-	        $table->integer('branch_manager_id');
+            $table->string('region');
+	        $table->integer('branch_manager')->nullable();
             $table->string('region');
             $table->timestamps();
+            $table->foreign('branch_manager')->references('id')->on('users')
+                ->onDelete('set null');
         });
     }
 

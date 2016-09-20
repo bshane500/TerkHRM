@@ -111,6 +111,7 @@
                     <li><a href="{{url('recruitment/vacancies')}}">Vacancies</a></li>
                 </ul>
             </li>
+            <li><a href="{{route('settings')}}">Settings</a></li>
         </ul>
         <!-- /.sidebar-menu -->
     </section>

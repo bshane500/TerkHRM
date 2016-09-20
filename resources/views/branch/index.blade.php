@@ -57,8 +57,7 @@
     <script>
         $(document).on('click', '.edit-modal', function() {
             $('#msubmit').text("Update").removeClass('btn-primary').addClass('btn-info update');
-           form.action('/branches/update/'+$(this).data('id'));
-            $('.modal-title').text('Edit Branch');
+            $('.modal-title').text('Edit Branch');/
             $('#branch_name').val($(this).data('name'));
             $('#branch_code').val($(this).data('code'));
             $('#id').text($(this).data('id'));
@@ -74,6 +73,19 @@
         $(document).on('click','.delete-modal',function () {
             $('.modal-title').text('Delete Branch');
             $('#branch_delete').modal('show');
+        });
+        $('.modal-footer').on('click', '.update', function() {
+
+            $.ajax({
+                type: 'put',
+                url: '/branches/update/' +$('#id').text($(this).data('id')),
+                data: {
+                    '_token': $('input[name=_token]').val(),
+                    'id': $('#id').text($(this).data('id')),
+                    'name': $('#branch_name').val(),
+                    'branch_code':$('#branch_code').val()
+                }
+            });
         });
 
     </script>

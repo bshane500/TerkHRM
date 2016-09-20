@@ -22,13 +22,16 @@ class CreateUsersTable extends Migration
             $table->string('password', 60);
             $table->integer('branch_id')->unsigned();
             $table->date('date_of_birth');
-            $table->integer('department_id')->unsigned();
+            $table->integer('department_id')->unsigned()->nullabe();
+            $table->integer('job_title_id')->unsigned()->nullable();
             $table->rememberToken();
             $table->timestamps();
             $table->foreign('branch_id')->references('id')->on('branches')
-                ->onUpdate('cascade')->onDelete('cascade');
+                ->onUpdate('cascade')->onDelete('set null');
             $table->foreign('department_id')->references('id')->on('departments')
-                ->onUpdate('cascade')->onDelete('cascade');
+                ->onUpdate('cascade')->onDelete('set null');
+            $table->foreign('job_title_id')->references('id')->on('job_titles')
+                ->onUpdate('cascade')->onDelete('set null');
         });
     }
 

@@ -14,7 +14,7 @@ class CreateJobTitlesTable extends Migration
     {
         Schema::create('job_titles', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('job_title')->unique()->index();
+            $table->string('name')->unique()->index();
             $table->text('job_description');
             $table->text('job_specification');
 	        $table->integer('pay_grade_id');

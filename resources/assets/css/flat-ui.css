@@ -3451,7 +3451,7 @@ fieldset[disabled] .input-group-btn .btn-default.active {
 .select-info .select2-choice .select2-arrow {
   border-top-color: #fff;
   }
-.select-danger .select2-choice {
+.select-danger . select2-choice {
   color: #fff;
   background-color: #e74c3c;
   }

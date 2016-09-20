@@ -1,8 +1,9 @@
 
+<div class="row">
     <div class="col-md-6">
-       {{-- <input type="password" name="password" hidden value="secret">
-        <input type="password" name="password_confirmation" hidden value="secret">--}}
-        <!--Staff ID-->
+    {{-- <input type="password" name="password" hidden value="secret">
+     <input type="password" name="password_confirmation" hidden value="secret">--}}
+    <!--Staff ID-->
         <div class=form-group>
             {!! Form::label('staff_id', 'Staff ID') !!}
             {!! Form::text('staff_id',null, ['class' => 'form-control ','placeholder'=>'Staff ID']) !!}
@@ -53,4 +54,13 @@
             {!! Form::label('email', 'Email') !!}
             {!! Form::email('email',null, ['class' => 'form-control ','placeholder'=>'Email']) !!}
         </div>
+        <div class="box-footer">
+            <!--submit button-->
+            {!! Form::submit('Save',['class'=>'btn btn-primary pull-right' ])!!}
+        </div>
     </div>
+
+</div>
+
+
+

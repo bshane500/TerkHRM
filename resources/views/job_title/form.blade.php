@@ -10,8 +10,8 @@
                          'route'  =>  $job_title -> exists ? ['job-titles.update',$job_title->id]:['job-titles.store']
                     ])!!}
                 <div class=form-group>
-                    {!! Form::label('job_title', 'Job Title') !!}
-                    {!! Form::text('job_title',null, ['class' => 'form-control ','placeholder'=>'Job Title']) !!}
+                    {!! Form::label('name', 'Job Title') !!}
+                    {!! Form::text('name',null, ['class' => 'form-control ','placeholder'=>'Job Title']) !!}
                 </div><!--Job Description-->
                 <div class=form-group>
                     {!! Form::label('job_description', 'Job Description') !!}

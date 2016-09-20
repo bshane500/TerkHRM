@@ -41,7 +41,7 @@
                                     </li>
                                     <div class="box-footer">
                                         <a href="{{route('job-listings.apply',$vacancy->vacancy_name)}}" class="btn btn-success pull-right">
-                                            Apply
+                                            Apply 
                                         </a>
                                     </div>
                                 </ul>
@@ -52,5 +52,6 @@
             @endif
         </div>
     </div>
+    {{$vacancies->render()}}
 @endsection
 

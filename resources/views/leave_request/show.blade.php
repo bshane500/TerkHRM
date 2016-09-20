@@ -4,7 +4,7 @@
 
 
 
-    <div class="'box box-primary">
+    <div class="box box-primary">
         <div class="box-header with-border">
             <h4><i class="fa fa-fw fa-user"></i>
                 Employee Name: {{$leaveRequest->employees->full_name}}
@@ -18,7 +18,7 @@
             <hr/>
             <h4>End Date: {{$leaveRequest->end_date->format('d-m-Y')}}</h4>
             <hr/>
-            <h4>Total Days Requested: {{$leaveRequest->total_days}}</h4>
+            <h4>Total Days Requested: {{$leaveRequest->total_days_requested}}</h4>
             <hr/>
             <p> {{$leaveRequest->reason}}</p>
             <hr/>
@@ -26,9 +26,10 @@
                 'method' => 'put',
                 'route'  => ['leave-requests.update',$leaveRequest->id]
                ]) !!}
-            <button type="submit" class="btn btn-primary" name="approve" value="approve">Approve</button>
-            <button type="submit" class="btn btn-info" name="on-hold" value="on-hold">On
-                Hold</button>
+            <button type="submit" class="btn btn-primary" name="approve" value="approve">HR Approve</button>
+            @role('user')
+            <button type="submit" class="btn btn-info" name="on-hold" value="on-hold">OnHold</button>
+            @endrole
             <button type="submit" class="btn btn-danger" name="reject" value="reject">Reject</button>
             {!! Form::close() !!}
 

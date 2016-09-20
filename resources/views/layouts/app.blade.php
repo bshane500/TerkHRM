@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="{{asset('css/toastr.css')}}">
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
 
+
     <script src="{{asset('js/jQuery/jquery-2.2.3.min.js')}}"></script>
     <script src="{{asset('js/jQueryUi/jquery-ui.min.js')}}"></script>
     <script src="{{asset('js/toastr.min.js')}}"></script>
@@ -84,6 +85,7 @@
 
 <script src="{{asset('js/moment.min.js')}}"></script>
 <script src="{{asset('js/app.js')}}"></script>
+
 <script src="{{asset('js/init.js')}}"></script>
 
 </body>

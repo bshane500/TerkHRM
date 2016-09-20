@@ -1,4 +1,4 @@
-
+<div class="row">
     <div class="col-md-6">
         <!--First Name-->
         <div class=form-group>
@@ -23,11 +23,12 @@
             {!! Form::text('date_of_birth',null, ['class' => 'form-control dobdatepicker']) !!}
         </div>
 
-        <!--Country-->
-        <div class=form-group>
-            {!! Form::label('country', 'Country') !!}
-            {!! Form::select('country',$select['departments'],null, ['class' => 'form-control']) !!}
-        </div>
+       <!--Gender-->
+       <div class=form-group>
+           {!! Form::label('gender', 'Gender') !!}
+           {!! Form::select('gender',['male'=>'male','female'=>'female'],null, ['class' => 'form-control ','placeholder'=>'Select Gender']) !!}
+       </div>
+
     </div>
 
     <div class="col-md-6">
@@ -54,5 +55,15 @@
             {!! Form::label('phone_number', 'Phone Number') !!}
             {!! Form::text('phone_number',null, ['class' => 'form-control ','placeholder'=>'Phone']) !!}
         </div>
+        <div class=form-group>
+            {!! Form::label('country', 'Country') !!}
+            {!! Form::select('country',$select['departments'],null, ['class' => 'form-control']) !!}
+        </div>
+        <div class="box-footer">
+            <!--submit button-->
+            {!! Form::submit('Save',['class'=>'btn btn-primary pull-right' ])!!}
+        </div>
     </div>
+</div>
+
 

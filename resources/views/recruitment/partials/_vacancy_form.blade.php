@@ -1,22 +1,18 @@
-<!--Vacancy Name-->
 
     <div class="form-group">
         {!! Form::label('vacancy_name', 'Name',['class'=>'col-sm-2']) !!}
         <div class="col-sm-10">
             {!! Form::text('vacancy_name',null, ['class' => 'form-control',
-       'placeholder'=>'Vacancy
-       name']) !!}
+       'placeholder'=>'Vacancy name']) !!}
         </div>
-
     </div>
   <div>
       <!--Job Title-->
       <div class="form-group">
           {!! Form::label('job_title_id', 'Job Title',['class'=>'col-sm-2']) !!}
           <div class="col-sm-10">
-              {!! Form::select('job_title_id',$select['job_title'], ['class'=>'form-control select-primary'])
-          !!}
-          </div>
+          {!! Form::select('job_title_id',$select['job_title'], ['class' => 'form-control ']) !!}
+        </div>
 
       </div>
       <!--Hiring Manager-->

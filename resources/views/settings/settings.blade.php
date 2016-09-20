@@ -51,46 +51,38 @@
 
                     <div class="tab-pane" id="settings">
                         <form class="form-horizontal">
-                            <div class="form-group">
-                                <label for="inputName" class="col-sm-2 control-label">Name</label>
-
+                            <!--Org's name-->
+                            <div class=form-group>
+                                {!! Form::label('organisation_name', 'Organisation Name',['class'=>'col-sm-2 control-label']) !!}
                                 <div class="col-sm-10">
-                                    <input type="email" class="form-control" id="inputName" placeholder="Name">
+                                    {!! Form::text('organisation_name',null, ['class' => 'form-control ','placeholder'=>'Organisation Name']) !!}
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <label for="inputEmail" class="col-sm-2 control-label">Email</label>
-
+                            <!--Email-->
+                            <div class=form-group>
+                                {!! Form::label('email', 'Email',['class'=>'col-sm-2 control-label']) !!}
                                 <div class="col-sm-10">
-                                    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                                    {!! Form::email('email',null, ['class' => 'form-control ','placeholder'=>'email']) !!}
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <label for="inputName" class="col-sm-2 control-label">Name</label>
-
+                            <div class=form-group>
+                                {!! Form::label('address', 'Address',['class'=>'col-sm-2 control-label']) !!}
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="inputName" placeholder="Name">
+                                    {!! Form::textarea('address',null, ['class' => 'form-control ','rows'=>'3','placeholder'=>'Address']) !!}
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <label for="inputExperience" class="col-sm-2 control-label">Experience</label>
-
+                            <div class=form-group>
+                                {!! Form::label('country', 'Country',['class'=>'col-sm-2 control-label']) !!}
                                 <div class="col-sm-10">
-                                    <textarea class="form-control" id="inputExperience" placeholder="Experience"></textarea>
+                                    {!! Form::email('country',null, ['class' => 'form-control ']) !!}
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <label for="inputSkills" class="col-sm-2 control-label">Skills</label>
 
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="inputSkills" placeholder="Skills">
-                                </div>
-                            </div>
                             <div class="form-group ">
-                                <div class="col-sm-offset-2 col-sm-10">
+                                <div class=" col-sm-10">
                                     <div class="checkbox">
-                                        <label>
-                                            <input type="checkbox"> I agree to the following<a href="#">terms and conditions</a>
+                                        <label for="weekends" class="control-label">
+                                           Allow Weekends  <input type="checkbox" name="weekends">
                                         </label>
                                     </div>
                                 </div>

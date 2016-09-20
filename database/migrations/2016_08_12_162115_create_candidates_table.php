@@ -21,6 +21,7 @@ class CreateCandidatesTable extends Migration
 			$table->string('email');
 			$table->string('phone_number');
 			$table->text('note');
+			$table->string('resume');
 			$table->integer('vacancy_id')->unsigned()->nullable();
 			$table->foreign('vacancy_id')->references('id')->on('vacancies')->onDelete('set null');
 			$table->string('application_status');

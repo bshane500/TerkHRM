@@ -34,10 +34,11 @@
 				'other_names',
 				'branch_id',
 				'department_id',
+                'job_title',
 				'date_of_birth',
 				'phone_number'
 			];
-		protected $dates = ['date_of_birth'];
+		//protected $dates = ['date_of_birth'];
 
 		/**
 		 * The attributes excluded from the model's JSON form.
@@ -63,9 +64,9 @@
 			return $this->attributes['date_of_birth'] = Carbon::parse('Y-m-d',$date);
 		}*/
 
-		public function jobTitles()
+		public function jobTitle()
 		{
-			$this->hasOne(JobTitle::class);
+			$this->hasOne(JobTitle::class,'id','job_title');
 		}
 
 		/**

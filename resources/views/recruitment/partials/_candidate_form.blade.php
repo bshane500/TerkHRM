@@ -43,9 +43,9 @@
     </div>
     <!--Published-->
     <div class="form-group">
-        {!! Form::label('resume', 'resume',['class'=>'col-md-2']) !!}
+        {!! Form::label('resume1', 'resume',['class'=>'col-md-2']) !!}
         <div class="col sm-10">
-            {!! Form::file('resume',null,['class' =>'form-control'])
+            {!! Form::file('resume1',null,['class' =>'form-control,file-field'])
          !!}
         </div>
     </div>

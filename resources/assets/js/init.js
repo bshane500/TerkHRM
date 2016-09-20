@@ -13,12 +13,31 @@ $(function () {
 	});
 
 	$('#indexTables').DataTable({
+        "dom": 'T<"clear">lfrtip',
 		"paging": true,
 		"lengthChange": false,
 		"searching": true,
 		"ordering": true,
 		"info": true,
-		"autoWidth": false
+		"autoWidth": false,
+        "tableTools": {
+            "aButtons": [
+                {
+                    "sExtends": "copy",
+                    "sButtonText": "Copy to clipboard"
+                },
+                {
+                    "sExtends": "csv",
+                    "sButtonText": "Save to CSV"
+                },
+                {
+                    "sExtends": "xls",
+                    "oSelectorOpts": {
+                        page: 'current'
+                    }
+                }
+            ]
+        }
 	});
 
 	$(".select2").select2();

@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateDepartmentsTable extends Migration
+class AddBranchManagerColumn extends Migration
 {
     /**
      * Run the migrations.
@@ -12,11 +12,8 @@ class CreateDepartmentsTable extends Migration
      */
     public function up()
     {
-        Schema::create('departments', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('name')->unique();
-            $table->string('department_code')->unique();
-            $table->timestamps();
+        Schema::table('branches', function (Blueprint $table) {
+            $table->integer('branch_manager')->unsigned();
         });
     }
 
@@ -27,6 +24,8 @@ class CreateDepartmentsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('departments');
+        Schema::table('branches', function (Blueprint $table) {
+            $table->dropColumn('branch_manager');
+        });
     }
 }

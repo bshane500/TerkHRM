@@ -44,7 +44,7 @@
                     </div>
                     <div class="form-group">
                         <label for="roles" class="col-md-4 control-label">Roles</label>
-                        <div class="col-md-6" style="width: 250px">
+                        <div class="col-md-6">
                             {!! Form::select('roles[]',$select['roles'],null,
                             ['class' => 'form-control select2 multiselect-primary','multiple']) !!}
                         </div>

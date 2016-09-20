@@ -43,10 +43,6 @@
 			return view('employees.index', compact('employees'));
 		}
 
-		public function mine()
-		{
-			return $this->users->all();
-		}
 
 		/**
 		 * Show Form
@@ -97,7 +93,7 @@
 		public function edit($id)
 		{
 			$user = $this->users->with(['bankDetails'])->find($id);
-			return view('employees.form', compact('user'));
+			return view('employees.profile', compact('user'));
 		}
 
 		/**

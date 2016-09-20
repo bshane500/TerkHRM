@@ -41,7 +41,7 @@ elixir(function(mix) {
         adminLte+'bootstrap/js/bootstrap.min.js',
         adminPlugins+'datatables/jquery.dataTables.min.js',
         adminPlugins+'datatables/dataTables.bootstrap.min.js',
-        adminPlugins+'select2/select2.full.js',
+        adminPlugins+'select2/select2.js',
         adminPlugins+'iCheck/icheck.min.js',
         adminPlugins+'fullcalendar/fullcalendar.js',
         adminPlugins+'bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js',
@@ -54,13 +54,14 @@ elixir(function(mix) {
     |--------------------------------------------------------------------------
     */
     mix.styles([
-        adminPlugins+'select2/select2.css',
+
         adminPlugins+'iCheck/square/blue.css',
         adminPlugins+'fullcalendar/fullcalendar.css',
         adminPlugins+'bootstrap-wysihtml5/bootstrap3-wysihtml5.css',
         adminPlugins+'datepicker/datepicker3.css',
         adminPlugins+'datatables/dataTables.bootstrap.css',
         adminLte+'dist/css/adminLTE.min.css',
+        adminPlugins+'select2/select2.css',
         adminLte+'dist/css/skins/_all-skins.css'
     ],'public/css/app.css',packages)
 });

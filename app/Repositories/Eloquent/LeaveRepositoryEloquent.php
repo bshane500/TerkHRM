@@ -80,7 +80,7 @@
 		 */
 		public function getAllLeavesByUser($id)
 		{
-			return $this->all()->where('employee_id', $id);
+			return $this->all()->where('employee_id', $id)->where('status',2);
 		}
 
 
