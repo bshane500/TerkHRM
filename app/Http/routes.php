@@ -63,7 +63,7 @@
             | Settings
             |--------------------------------------------------------------------------
             */
-            Route::any('settings',['as'=>'settings','uses'=>'HomeController@settings']);
+            Route::resource('settings','SettingsController');
 			/*
 			|--------------------------------------------------------------------------
 			| Departments

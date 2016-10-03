@@ -17,14 +17,17 @@
           href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     {{--Main CSS--}}
 
+
     <link rel="stylesheet" href="{{asset('css/styles.css')}}">
     <link rel="stylesheet" href="{{asset('css/toastr.css')}}">
+    <link rel="stylesheet" href="{{asset('css/fileinput.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
 
 
     <script src="{{asset('js/jQuery/jquery-2.2.3.min.js')}}"></script>
     <script src="{{asset('js/jQueryUi/jquery-ui.min.js')}}"></script>
     <script src="{{asset('js/toastr.min.js')}}"></script>
+    <script src="{{asset('js/fileinput.min.js')}}"></script>
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->

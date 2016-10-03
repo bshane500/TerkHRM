@@ -6,8 +6,9 @@
 	use Illuminate\Http\Request;
 
 	use App\Http\Requests;
+    use Illuminate\Support\Facades\Response;
 
-	/**
+    /**
 	 * Class BranchController
 	 * @package App\Http\Controllers
 	 */
@@ -97,7 +98,7 @@
 		public function update(Request $request, $id)
 		{
 			$this->branch->update($request->all(), $id);
-			return redirect(route('branches.edit', $id))->with('status', 'Updated');
+			return Response::json(200);
 		}
 
 		/**

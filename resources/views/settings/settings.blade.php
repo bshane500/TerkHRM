@@ -50,12 +50,26 @@
                     <!-- /.tab-pane -->
 
                     <div class="tab-pane" id="settings">
-                        <form class="form-horizontal">
+                        {!! Form::model($settings,
+                                ['method' => $settings -> exists ? 'put':'post',
+                                 'route'  => $settings -> exists ? ['settings.update',$settings->id]:['settings.store'],
+                                 'class'=>'form-horizontal','files'=>true
+                            ])!!}
+
+
+
+                            <!--Logo-->
+                            <div class=form-group>
+                                {!! Form::label('image', 'Logo',['class'=>'col-sm-2 control-label']) !!}
+                                <div class="col-sm-10 kv‐avatar center‐block" style="width:300px">
+                                    {!! Form::file('image',null, ['class' => 'form-control file-loading']) !!}
+                                </div>
+                            </div>
                             <!--Org's name-->
                             <div class=form-group>
-                                {!! Form::label('organisation_name', 'Organisation Name',['class'=>'col-sm-2 control-label']) !!}
+                                {!! Form::label('organization_name', 'Organisation Name',['class'=>'col-sm-2 control-label']) !!}
                                 <div class="col-sm-10">
-                                    {!! Form::text('organisation_name',null, ['class' => 'form-control ','placeholder'=>'Organisation Name']) !!}
+                                    {!! Form::text('organization_name',null, ['class' => 'form-control ','placeholder'=>'Organisation Name']) !!}
                                 </div>
                             </div>
                             <!--Email-->
@@ -74,7 +88,7 @@
                             <div class=form-group>
                                 {!! Form::label('country', 'Country',['class'=>'col-sm-2 control-label']) !!}
                                 <div class="col-sm-10">
-                                    {!! Form::email('country',null, ['class' => 'form-control ']) !!}
+                                    {!! Form::text('country',null, ['class' => 'form-control ']) !!}
                                 </div>
                             </div>
 
@@ -92,7 +106,7 @@
                                     <button type="submit" class="btn btn-danger">Submit</button>
                                 </div>
                             </div>
-                        </form>
+                            {!! Form::close() !!}
                     </div>
                     <!-- /.tab-pane -->
                 </div>
@@ -102,4 +116,12 @@
         </div>
         <!-- /.col -->
     </div>
+    <script>
+        $('#image').fileinput({
+            overwriteInitial:true,
+            showUpload:false,
+            defaultPreviewContent: '<img src="{{'/images/'.$settings->logo}}"  style="width:160px">',
+
+        })
+    </script>
 @endsection

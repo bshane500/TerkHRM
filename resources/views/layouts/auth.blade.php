@@ -35,11 +35,13 @@
 <body class="hold-transition login-page">
 
  <!-- Main content -->
- <div class="login-logo">
-     @yield('logo')
- </div>
+
  <div class="login-box">
+
      <div class="login-box-body">
+         <div class="login-logo">
+             @yield('logo')
+         </div>
          @yield('content')
      </div>
      <!-- /.content -->

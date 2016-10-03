@@ -29,7 +29,7 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="reason">Reason</label>
                             <div class="col-md-6">
-                                <textarea name="reason" value="" placeholder="Enter Reason" class="form-control"></textarea>
+                                <textarea name="reason"  placeholder="Enter Reason" class="form-control"></textarea>
                             </div>
                         </div>
                         <div class="form-group">

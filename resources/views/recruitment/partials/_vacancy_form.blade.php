@@ -62,3 +62,6 @@
         {!! Form::submit($buttonText,['class'=>'btn btn-primary pull-right' ])!!}
     </div>
     <!--submit button-->
+    <div class="box-footer with-border">
+        <label>Public Link to Job Posting:</label> <a href="{{route('jobs')}}">{{route('jobs')}}</a>
+    </div>

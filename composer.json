@@ -12,7 +12,8 @@
         "yab/laracogs": "^1.9",
         "guzzlehttp/guzzle": "~5.3|~6.0",
         "prettus/l5-repository": "^2.6",
-        "yajra/laravel-datatables-oracle": "~6.0"
+        "yajra/laravel-datatables-oracle": "~6.0",
+        "intervention/image": "^2.3"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

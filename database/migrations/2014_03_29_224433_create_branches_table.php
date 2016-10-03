@@ -17,6 +17,7 @@ class CreateBranchesTable extends Migration
             $table->string('name')->unique()->index();
             $table->string('branch_code')->unique();
             $table->string('region');
+            $table->text('address');
 	        $table->integer('branch_manager')->nullable();
             $table->string('region');
             $table->timestamps();

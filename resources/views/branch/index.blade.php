@@ -4,8 +4,9 @@
 
         <div class="box box-primary">
             <div class="box-header with-border">
-                <a href="#" id="add" class="btn btn-primary">Add
-                    New Branch</a>
+                <a href="#" id="add" class="btn btn-primary">
+                    AddNew Branch
+                </a>
             </div>
             <div class="box-body">
                 <table class="table table-hover" id="indexTables">
@@ -27,7 +28,7 @@
                                 <td>{{$branche->name}}</td>
                                 <td>{{$branche->branch_code}}</td>
                                 <td>
-                                    <div hidden id="id"></div>
+                                    <div hidden id="id" data-id="{{$branche->id}}"></div>
                                     <button class="edit-modal btn btn-info"
                                             data-code="{{$branche->branch_code}}"
                                             data-name="{{$branche->name}}" data-id="{{$branche->id}}">
@@ -56,12 +57,13 @@
     @include('partials.modal.delete_confirm.delete_branch')
     <script>
         $(document).on('click', '.edit-modal', function() {
-            $('#msubmit').text("Update").removeClass('btn-primary').addClass('btn-info update');
-            $('.modal-title').text('Edit Branch');/
+            $('#msubmit').text("Update").removeClass('btn-primary').addClass('btn-info update').removeAttr('type');
+            $('.modal-title').text('Edit Branch');
             $('#branch_name').val($(this).data('name'));
             $('#branch_code').val($(this).data('code'));
-            $('#id').text($(this).data('id'));
+            $('#id').val($(this).data('id'));
             $('#add_branch').modal('show');
+            console.log($('#id').val());
         });
         $(document).on('click','#add',function () {
             $('#msubmit').text("Save");
@@ -77,15 +79,32 @@
         $('.modal-footer').on('click', '.update', function() {
 
             $.ajax({
-                type: 'put',
-                url: '/branches/update/' +$('#id').text($(this).data('id')),
+                type: 'patch',
+                url: '/branches/'+$('#id').val(),
                 data: {
                     '_token': $('input[name=_token]').val(),
-                    'id': $('#id').text($(this).data('id')),
+                    'id': $('#id').val(),
                     'name': $('#branch_name').val(),
                     'branch_code':$('#branch_code').val()
+                },
+                success:function (data) {
+                    if(data == 200) {
+                        window.location = '/branches';
+                        toastr.options = {
+                            "closeButton": true
+                        };
+                        toastr.success('Updates]d', 'Notification');
+                    }
+                    else{
+                        toastr.options ={
+                            "closeButton": true
+                        };
+                        toastr.error('Error', 'Notification');
+                    }
+
                 }
             });
+
         });
 
     </script>

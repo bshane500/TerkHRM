@@ -1,5 +1,7 @@
 @extends('layouts.auth')
-
+@section('logo')
+    <img src="{{asset('images/logo.png')}}" alt="TerkHRM" width="100" height="100">
+@endsection
 @section('content')
 
     <form action="{{ url('/login') }}" method="post">
