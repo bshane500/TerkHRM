@@ -55,7 +55,7 @@ elixir(function(mix) {
     */
     mix.styles([
 
-        adminPlugins+'iCheck/square/blue.css',
+        adminPlugins+'iCheck/square/_all.css',
         adminPlugins+'fullcalendar/fullcalendar.css',
         adminPlugins+'bootstrap-wysihtml5/bootstrap3-wysihtml5.css',
         adminPlugins+'datepicker/datepicker3.css',

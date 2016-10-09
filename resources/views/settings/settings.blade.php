@@ -47,7 +47,7 @@
                     <div class="tab-pane" id="timeline">
 
                     </div>
-                    <!-- /.tab-pane -->
+                    <!-- /.tab -pane -->
 
                     <div class="tab-pane" id="settings">
                         {!! Form::model($settings,
@@ -120,7 +120,7 @@
         $('#image').fileinput({
             overwriteInitial:true,
             showUpload:false,
-            defaultPreviewContent: '<img src="{{'/images/'.$settings->logo}}"  style="width:160px">',
+            defaultPreviewContent: '<img src="{{'/images/'.$settings->logo}}"  style="width:160px">'
 
         })
     </script>

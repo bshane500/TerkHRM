@@ -6,7 +6,7 @@
         <!-- Profile Image -->
         <div class="box box-primary">
             <div class="box-body box-profile">
-                <img class="profile-user-img img-responsive img-circle" src="../../dist/img/user4-128x128.jpg" alt="User profile picture">
+                <img class="profile-user-img img-responsive img-circle" src="{{'/images/'.$user->photo->path}}" alt="User profile picture">
 
                 <h3 class="profile-username text-center">{{$user->full_name}}</h3>
 
@@ -29,7 +29,7 @@
 
     </div>
     <!-- /.col -->
-    {!! Form::model($user,['method' =>  'put','route'  => ['employees.update',$user->id]])!!}
+    {!! Form::model($user,['method' =>  'put','route'  => ['employees.update',$user->id],'files'=>true])!!}
     <div class="col-md-9">
         <div class="nav-tabs-custom">
             <ul class="nav nav-tabs">

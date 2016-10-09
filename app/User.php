@@ -8,7 +8,8 @@
 	use App\Models\EmergencyContact;
 	use App\Models\JobTitle;
 	use App\models\Leave;
-	use Carbon\Carbon;
+    use App\Models\Photo;
+    use Carbon\Carbon;
 	use Illuminate\Foundation\Auth\User as Authenticatable;
 	use Zizaco\Entrust\Traits\EntrustUserTrait;
 
@@ -34,9 +35,10 @@
 				'other_names',
 				'branch_id',
 				'department_id',
-                'job_title',
+                'job_title_id',
 				'date_of_birth',
-				'phone_number'
+				'phone_number',
+                'avatar'
 			];
 		//protected $dates = ['date_of_birth'];
 
@@ -66,7 +68,7 @@
 
 		public function jobTitle()
 		{
-			$this->hasOne(JobTitle::class,'id','job_title');
+			$this->hasOne(JobTitle::class,'id','job_title_id');
 		}
 
 		/**
@@ -144,6 +146,11 @@
 		public function emergencyContacts()
 		{
 			return $this->hasMany(EmergencyContact::class);
+		}
+
+        public function photo()
+        {
+            return $this->hasOne(Photo::class,'id','avatar');
 		}
 
 	}

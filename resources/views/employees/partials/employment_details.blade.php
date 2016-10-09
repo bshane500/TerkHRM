@@ -1,6 +1,11 @@
-
 <div class="row">
     <div class="col-md-6">
+        <div class=form-group>
+            {!! Form::label('image', 'Logo',['class'=>'col-sm-2 control-label']) !!}
+            <div class="col-sm-10 kv‐avatar center‐block" style="width:300px">
+                {!! Form::file('image',null, ['class' => 'form-control file-loading']) !!}
+            </div>
+        </div>
     {{-- <input type="password" name="password" hidden value="secret">
      <input type="password" name="password_confirmation" hidden value="secret">--}}
     <!--Staff ID-->
@@ -32,8 +37,8 @@
     <div class="col-md-6">
         <!--Job Title-->
         <div class=form-group>
-            {!! Form::label('job_title', 'Job Title') !!}
-            {!! Form::select('job_title',$select['job_title'],null, ['class' => 'form-control ',
+            {!! Form::label('job_title_id', 'Job Title') !!}
+            {!! Form::select('job_title_id',$select['job_title'],null, ['class' => 'form-control ',
             'data-placeholder'=>'Select Job']) !!}
         </div>
 
@@ -54,13 +59,21 @@
             {!! Form::label('email', 'Email') !!}
             {!! Form::email('email',null, ['class' => 'form-control ','placeholder'=>'Email']) !!}
         </div>
-        <div class="box-footer">
-            <!--submit button-->
-            {!! Form::submit('Save',['class'=>'btn btn-primary pull-right' ])!!}
-        </div>
-    </div>
 
+    </div>
+    <div class="box-footer">
+        <!--submit button-->
+        {!! Form::submit('Save',['class'=>'btn btn-primary pull-right' ])!!}
+    </div>
 </div>
 
+<script>
+    $('#image').fileinput({
+        overwriteInitial: true,
+        showUpload: false,
+        defaultPreviewContent: '<img src="{{'/images/'.$user->photo->path}}"  style="width:160px">'
 
+    })
+
+</script>
 

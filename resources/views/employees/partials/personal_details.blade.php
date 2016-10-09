@@ -59,10 +59,6 @@
             {!! Form::label('country', 'Country') !!}
             {!! Form::select('country',$select['departments'],null, ['class' => 'form-control']) !!}
         </div>
-        <div class="box-footer">
-            <!--submit button-->
-            {!! Form::submit('Save',['class'=>'btn btn-primary pull-right' ])!!}
-        </div>
     </div>
 </div>
 

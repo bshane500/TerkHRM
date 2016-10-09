@@ -29,9 +29,9 @@
                 {!! Form::model($user,
                      [
                         'method' => $user -> exists ? 'put':'post',
-                        'route'  => $user -> exists ? ['employees.update',$user->id]:['employees.store'],
+                        'route'  => $user -> exists ? ['employees.update',$user->id]:['employees.store']
                      ])!!}
-                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 info-tab">
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 info-tab">
 
                     <!-- flight section -->
                     <div class="info-tab-content active">
@@ -41,12 +41,6 @@
                     <div class="info-tab-content">
                         @include('employees.partials.personal_details')
                     </div>
-                        <!--submit button-->
-                        <!--submit button-->
-
-
-
-                    <!-- hotel search -->
                     <div class="info-tab-content">
                         @include('employees.partials.emergency_contact')
                     </div>
@@ -59,6 +53,10 @@
                         @include('employees.partials.dependents')
                     </div>
 
+                </div>
+                <div class="box-footer">
+                    <!--submit button-->
+                    {!! Form::submit('Save',['class'=>'btn btn-primary pull-right' ])!!}
                 </div>
                 {!! Form::close() !!}
             </div>

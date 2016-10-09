@@ -25,6 +25,4 @@
     'placeholder'=>'Account Name']) !!}
 </div>
 
-<div class="box-footer">
-    {!! Form::submit('Save',['class'=>'btn btn-primary pull-right' ])!!}
-</div>
+

@@ -33,11 +33,11 @@
         <ul class="sidebar-menu">
             <li class="header">Main Navigation</li>
             <!-- Optionally, you can add icons to the links -->
-            <li class=""><a href="/dashboard"><i class="fa fa-dashboard"></i>
+            <li {{Request::is('*dashboard') ? 'class=active':''}}><a href="/dashboard"><i class="fa fa-dashboard"></i>
                 <span>Dashboard</span></a>
             </li>
             <li {{Request::is('*employees') ? 'class=active':''}}>
-                <a href="{{ route('employees.index') }}"><i class="fa fa-link">
+                <a href="{{ route('employees.index') }}"><i class="fa fa-users">
                     </i> <span>Employees</span>
                 </a>
             </li>
@@ -55,7 +55,7 @@
                 </ul>
             </li>
             <li class="treeview">
-                <a href="#"><i class="fa fa-link"></i> <span>Leave Management</span>
+                <a href="#"><i class="fa fa-heartbeat"></i> <span>Leave Management</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
@@ -78,7 +78,7 @@
             </li>
 
             <li class="treeview">
-                <a href="#"><i class="fa fa-link"></i><span>News & Events</span>
+                <a href="#"><i class="fa fa-newspaper-o"></i><span>News & Events</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
@@ -91,7 +91,7 @@
 
 
             <li class="treeview">
-                <a href="#"><i class="fa fa-link"></i> <span>User Management</span>
+                <a href="#"><i class="fa fa-user-plus"></i> <span>User Management</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
@@ -100,18 +100,22 @@
                     <li><a href="{{url('admin/user-group')}}">Roles</a></li>
                 </ul>
             </li>
-            <li class="treeview">
+            <li class="treeview {{Request::is('*candidates','*vacancies') ? 'active':''}} ">
                 <a href="#"><i class="fa fa-link"></i> <span>Recruitment</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
                 </a>
-                <ul class="treeview-menu">
-                    <li><a href="{{url('recruitment/candidates')}}">Candidates</a></li>
-                    <li><a href="{{url('recruitment/vacancies')}}">Vacancies</a></li>
+                <ul class="treeview-menu" >
+                    <li {{Request::is('*candidates') ? 'class=active':''}}><a href="{{url('recruitment/candidates')}}">Candidates</a></li>
+                    <li {{Request::is('*vacancies') ? 'class=active':''}}><a href="{{url('recruitment/vacancies')}}">Vacancies</a></li>
                 </ul>
             </li>
-            <li><a href="{{route('settings.index')}}">Settings</a></li>
+            <li {{Request::is('*settings') ? 'class=active':''}}>
+                <a href="{{route('settings.index')}}"><i class="fa fa-cogs"></i>
+                    <span>Settings</span>
+                </a>
+            </li>
         </ul>
         <!-- /.sidebar-menu -->
     </section>

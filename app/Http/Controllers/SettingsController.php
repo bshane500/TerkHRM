@@ -6,8 +6,6 @@ use App\Repositories\Contracts\SettingRepository;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
-use org\bovigo\vfs\vfsStreamContainerIterator;
-
 class SettingsController extends Controller
 {
     protected $setting;

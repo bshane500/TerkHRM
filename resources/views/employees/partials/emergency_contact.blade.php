@@ -26,7 +26,6 @@
             <button class="btn btn-primary btn-xs btn-add"><i class="fa fa-plus"></i></button>
         </div>
     </div>
-        {!! Form::submit('Save',['class'=>'btn btn-primary col-md-offset-4' ])!!}
 
 </div>
 

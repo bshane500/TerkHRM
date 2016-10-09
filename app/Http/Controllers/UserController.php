@@ -106,6 +106,7 @@
 		 */
 		public function update(Requests\Update\UpdateEmployee $request, $id)
 		{
+		    //dd($request->all());
 
 			$this->users->updateUserWithRoles($id, $request->all(), $request->input('roles_list'));
 			return redirect(route('employees.edit', $id))->with('status', 'Employee Data

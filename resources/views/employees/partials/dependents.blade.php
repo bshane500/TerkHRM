@@ -26,8 +26,6 @@
 
     </div>
 
-<!--submit button-->
-        {!! Form::submit('Save',['class'=>'btn btn-primary col-md-offset-4' ])!!}
 </div>
 
 <script>
