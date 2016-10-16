@@ -13,5 +13,7 @@ before_script:
 
 script:
   - phpunit
-  - travis_retry encrypt "terktrendz:002rklOAej7DEQXcAtd443cR" --add notifications.slack
+  
+notifications:
+  slack: terktrendz:002rklOAej7DEQXcAtd443cR
 
