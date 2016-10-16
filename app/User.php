@@ -40,7 +40,7 @@
 				'phone_number',
                 'avatar'
 			];
-		//protected $dates = ['date_of_birth'];
+
 
 		/**
 		 * The attributes excluded from the model's JSON form.
@@ -122,17 +122,7 @@
 		}
 
 
-		/**
-		 * @param $name
-		 */
-		public function hasRole($name)
-		{
-		}
 
-		public function can($ability, $arguments = [])
-		{
-
-		}
 
 		/**
 		 * Each User has a Bank Account

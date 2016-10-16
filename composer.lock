@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "840f6c15d39ade274bd3726a93615b03",
-    "content-hash": "40ff95597174fc085841dfc1e87eab78",
+    "hash": "42464abf59825188fa3031020ca69d92",
+    "content-hash": "4debfd9c8b28aff9c9b92382ced2cd37",
     "packages": [
         {
             "name": "alfredo-ramos/parsedown-extra-laravel",
@@ -3546,16 +3546,16 @@
         },
         {
             "name": "zizaco/entrust",
-            "version": "5.2.x-dev",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Zizaco/entrust.git",
-                "reference": "b749bff868026336dec1ba1a16c150728697353d"
+                "reference": "1fa77fadfbc8840ee1e9a6ce483b39ba985f81d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Zizaco/entrust/zipball/b749bff868026336dec1ba1a16c150728697353d",
-                "reference": "b749bff868026336dec1ba1a16c150728697353d",
+                "url": "https://api.github.com/repos/Zizaco/entrust/zipball/1fa77fadfbc8840ee1e9a6ce483b39ba985f81d2",
+                "reference": "1fa77fadfbc8840ee1e9a6ce483b39ba985f81d2",
                 "shasum": ""
             },
             "require": {
@@ -3610,7 +3610,7 @@
                 "permission",
                 "roles"
             ],
-            "time": "2016-03-24 15:24:42"
+            "time": "2016-03-09 17:05:35"
         }
     ],
     "packages-dev": [
@@ -4824,9 +4824,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "zizaco/entrust": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

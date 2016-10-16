@@ -36,11 +36,13 @@
             <li {{Request::is('*dashboard') ? 'class=active':''}}><a href="/dashboard"><i class="fa fa-dashboard"></i>
                 <span>Dashboard</span></a>
             </li>
+            @role('admin')
             <li {{Request::is('*employees') ? 'class=active':''}}>
                 <a href="{{ route('employees.index') }}"><i class="fa fa-users">
                     </i> <span>Employees</span>
                 </a>
             </li>
+            @endrole
             <li class="treeview">
                 <a href="#"><i class="fa fa-building"></i> <span>Organization</span>
                     <span class="pull-right-container">
