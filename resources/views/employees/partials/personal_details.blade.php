@@ -57,7 +57,7 @@
         </div>
         <div class=form-group>
             {!! Form::label('country', 'Country') !!}
-            {!! Form::select('country',$select['departments'],null, ['class' => 'form-control']) !!}
+            {!! Form::select('country',['Ghana'=>'Ghana'],null, ['class' => 'form-control']) !!}
         </div>
     </div>
 </div>

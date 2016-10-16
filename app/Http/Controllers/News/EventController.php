@@ -27,6 +27,7 @@
 		{
 
 			$this->event = $eventService;
+
 		}
 
 		/**

@@ -37,17 +37,21 @@ class ViewServiceProvider extends ServiceProvider
 		    $view->with('news', News::all());
 	    });
 //todo extract to dedicated view composer class
-		/*view()->share('select',
-			$select = [
-				'departments'=> Department::pluck('name','id'),
-				'branches'=>Branch::pluck('name','id'),
-				'roles'=>Role::pluck('display_name','id'),
-				'perms'=>Permission::pluck('display_name','id'),
-				'job_title'=>JobTitle::pluck('job_title','id'),
-				'leave_type'=>LeaveType::all(),
-			]
+		view()->composer(['employees.partials.employment_details','partials.modal.add_employee'], function ($view) {
+            $view->with('select', $select = [
+                'departments' => Department::pluck('name', 'id'),
+                'branches' => Branch::pluck('name', 'id'),
+                'roles' => Role::pluck('display_name', 'id'),
+                'perms' => Permission::pluck('display_name', 'id'),
+                'job_title' => JobTitle::pluck('job_title', 'id'),
+                'leave_type' => LeaveType::all(),
+            ]);
+        }
 		);
-	    view()->share('events',Event::all());*/
+
+        view()->composer('partials.events',function($view){
+            $view->with('events',Event::all());
+        });
 
 	    view()->composer('home',function ($view){
 	    	$view->with('count',
