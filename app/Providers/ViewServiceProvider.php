@@ -37,7 +37,7 @@ class ViewServiceProvider extends ServiceProvider
 		    $view->with('news', News::all());
 	    });
 //todo extract to dedicated view composer class
-		view()->share('select',
+		/*view()->share('select',
 			$select = [
 				'departments'=> Department::pluck('name','id'),
 				'branches'=>Branch::pluck('name','id'),
@@ -47,7 +47,7 @@ class ViewServiceProvider extends ServiceProvider
 				'leave_type'=>LeaveType::all(),
 			]
 		);
-	    view()->share('events',Event::all());
+	    view()->share('events',Event::all());*/
 
 	    view()->composer('home',function ($view){
 	    	$view->with('count',
