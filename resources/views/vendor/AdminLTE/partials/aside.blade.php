@@ -36,13 +36,14 @@
             <li {{Request::is('*dashboard') ? 'class=active':''}}><a href="/dashboard"><i class="fa fa-dashboard"></i>
                 <span>Dashboard</span></a>
             </li>
-            @role('admin')
+            @role('hr-admin')
             <li {{Request::is('*employees') ? 'class=active':''}}>
                 <a href="{{ route('employees.index') }}"><i class="fa fa-users">
                     </i> <span>Employees</span>
                 </a>
             </li>
             @endrole
+            @role('hr-admin')
             <li class="treeview">
                 <a href="#"><i class="fa fa-building"></i> <span>Organization</span>
                     <span class="pull-right-container">
@@ -56,6 +57,7 @@
                     ('branches.index') }}">Branches</a>
                 </ul>
             </li>
+            @endrole
             <li class="treeview">
                 <a href="#"><i class="fa fa-heartbeat"></i> <span>Leave Management</span>
                     <span class="pull-right-container">
@@ -63,10 +65,13 @@
                     </span>
                 </a>
                 <ul class="treeview-menu">
+                    @role('hr-admin')
                     <li><a href="{{ route('leave-types.index') }}">LeaveCategories</a></li>
+                    @endrole
                     <li><a href="{{ route('leave-requests.index') }}">Leave Requests</a></li>
                 </ul>
             </li>
+            @role(['hr-admin','admin'])
             <li class="treeview">
                 <a href="#"><i class="fa fa-link"></i><span>Job</span>
                     <span class="pull-right-container">
@@ -78,6 +83,7 @@
                     <li><a href="{{ route('pay-grades.index') }}">Pay Grades</a></li>
                 </ul>
             </li>
+
 
             <li class="treeview">
                 <a href="#"><i class="fa fa-newspaper-o"></i><span>News & Events</span>
@@ -118,6 +124,7 @@
                     <span>Settings</span>
                 </a>
             </li>
+            @endrole
         </ul>
         <!-- /.sidebar-menu -->
     </section>

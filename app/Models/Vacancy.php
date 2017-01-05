@@ -13,7 +13,7 @@ class Vacancy extends Model implements Transformable
     protected $fillable = [
     	'vacancy_name',
 	    'job_title_id',
-	    'hiring_manager',
+        'minimum_qualification',
 	    'no_of_positions',
 	    'description',
 	    'status',

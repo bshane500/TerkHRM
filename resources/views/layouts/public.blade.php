@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>TerkHRM | @yield('title')</title>
+    <title>{{config('constant.app_name')}} | @yield('title')</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
           name="viewport">
@@ -42,7 +42,7 @@
         <nav class="navbar navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
-                    <a href="../../index2.html" class="navbar-brand"><b>Terk</b>HRM</a>
+                    <a href="{{route('jobs')}}" class="navbar-brand"><b>Terk</b>HRM</a>
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
                         <i class="fa fa-bars"></i>
                     </button>
@@ -93,11 +93,11 @@
     <!-- Main Footer -->
     <footer class="main-footer">
         <div class="pull-right hidden-xs">
-            TerkHRM
+            {{config('constant.app_name')}}
             <!-- To the right -->
         </div>
         <!-- Default to the left -->
-        <strong>Copyright &copy; {{date('Y')}} <a href="#">TerkTrendz Inc</a>.</strong> All rights
+        <strong>Copyright &copy; {{date('Y')}} <a href="http://terktrendz.com">{{config('constant.author')}}</a>.</strong> All rights
         reserved.
     </footer>
 

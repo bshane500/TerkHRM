@@ -1,4 +1,5 @@
 @extends('layouts.public')
+@section('title','Jobs')
 @section('content')
     <div class="page-wrapper">
         <div class="row">

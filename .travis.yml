@@ -13,7 +13,7 @@ before_script:
 
 script:
   - phpunit
-  
+
 notifications:
   slack: terktrendz:002rklOAej7DEQXcAtd443cR
 

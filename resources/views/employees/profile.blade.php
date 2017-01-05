@@ -6,8 +6,11 @@
         <!-- Profile Image -->
         <div class="box box-primary">
             <div class="box-body box-profile">
+                @if($user->photo->exists())
                 <img class="profile-user-img img-responsive img-circle" src="{{'/images/'.$user->photo->path}}" alt="User profile picture">
-
+                @else
+                    <img class="profile-user-img img-responsive img-circle" src="#" alt="User profile picture">
+                @endif
                 <h3 class="profile-username text-center">{{$user->full_name}}</h3>
 
                 <p class="text-muted text-center">{{$user->job_title}}</p>

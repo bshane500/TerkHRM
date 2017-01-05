@@ -37,7 +37,14 @@ class ViewServiceProvider extends ServiceProvider
 		    $view->with('news', News::all());
 	    });
 //todo extract to dedicated view composer class
-		view()->composer(['employees.partials.employment_details','partials.modal.add_employee'], function ($view) {
+		view()->composer(
+		    [
+		    'employees.partials.employment_details',
+            'partials.modal.add_employee',
+            'partials.modal.add_permission',
+            'partials.modal.attach_permissions',
+                'leave_request.index'
+        ], function ($view) {
             $view->with('select', $select = [
                 'departments' => Department::pluck('name', 'id'),
                 'branches' => Branch::pluck('name', 'id'),
